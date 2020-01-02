@@ -1,0 +1,20 @@
+administrator.companyrecords.list.label.name = Nombre
+administrator.companyrecords.list.label.sector = Sector
+administrator.companyrecords.list.label.website = Sitio web
+
+administrator.companyrecords.form.label.name = Nombre:
+administrator.companyrecords.form.label.sector = Sector:
+administrator.companyrecords.form.label.ceo = Ceo:
+administrator.companyrecords.form.label.description = Descripcion:
+administrator.companyrecords.form.label.website = Sitio web:
+administrator.companyrecords.form.label.phone = Telefono:
+administrator.companyrecords.form.label.email = Correo Electronico:
+administrator.companyrecords.form.label.incorporated = Incorporada:
+administrator.companyrecords.form.label.numberStars = Numero de estrella:
+
+administrator.companyrecords.form.label.button.return = Volver
+administrator.companyrecords.form.button.update = Actualizar
+administrator.companyrecords.form.button.delete = Borrar
+administrator.companyrecords.form.button.create = Crear
+
+administrator.companyrecords.error.pattern-phone=Debe seguir la siguiente estructura +34 676305600 or +1234) 123456

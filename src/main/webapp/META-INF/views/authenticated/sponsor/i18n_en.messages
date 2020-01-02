@@ -1,0 +1,6 @@
+authenticated.sponsor.form.label.orgName = Organization name:
+
+authenticated.sponsor.form.button.create = Register
+authenticated.sponsor.form.button.update = Update
+authenticated.sponsor.form.label.button.return = Return
+

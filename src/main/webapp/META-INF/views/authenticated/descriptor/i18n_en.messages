@@ -1,0 +1,9 @@
+authenticated.descriptor.list.label.description = Description
+
+authenticated.duty.form.label.jobTitle = Title of the job of this duty:
+authenticated.duty.form.label.jobId = Id of the job of this duty:
+authenticated.descriptor.form.label.duties= Click here to see the duties
+authenticated.descriptor.form.label.description = Description:
+authenticated.descriptor.form.label.button.return = Return
+
+

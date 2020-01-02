@@ -1,0 +1,28 @@
+employer.application.list.label.job = Trabajo
+employer.application.list.label.status = Status
+employer.application.list.label.moment = Momento
+employer.application.list.label.reference = Referencia
+
+employer.application.form.label.message.info = Información de la solicitud:
+employer.application.form.label.job = Trabajo:
+employer.application.form.label.employer = Trabajador:
+employer.application.form.label.status = Status:
+employer.application.form.label.status.pending = pendiente
+employer.application.form.label.status.accepted = aceptado
+employer.application.form.label.status.rejected = rechazado
+employer.application.form.label.skills = Habilidades:
+employer.application.form.label.qualifications = Cualificaciones:
+employer.application.form.label.moment = Momento:
+employer.application.form.label.reference = Referencia:
+employer.application.form.label.justification = Justificacion:
+employer.application.form.label.statement = Defensa:
+
+employer.application.form.label.message = Cambiar el estado de la solicitud:
+
+employer.application.form.button.update = Actualizar
+
+employer.application.form.label.button.return = Return
+
+employer.application.error.pattern-status= Debe ser pending, accepted o rejected
+employer.request.error.must-justificated = Las solicitudes rechazadas deben de tener una justificación
+worker.application.error.had-applicated = Ya has aplicado a este trabajo

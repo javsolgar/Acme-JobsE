@@ -1,0 +1,15 @@
+authenticated.auditor.form.label.description = Description of the request:
+authenticated.auditor.form.label.firm = Firm:
+authenticated.auditor.form.label.respStatement = Responsability statement:
+
+authenticated.auditor.form.button.update = Update
+authenticated.auditor.form.label.button.return = Return
+
+authenticated.auditor.error.must-have-description = The request must have a description
+authenticated.auditor.error.must-not-have-spam-description = The description of the request must not contain spam
+authenticated.auditor.error.must-have-firm = The request must have a firm
+authenticated.auditor.error.must-not-have-spam-firm = The firm of the request must not contain spam
+authenticated.auditor.error.must-have-respStatement = The request must have a responsability statement
+authenticated.auditor.error.must-not-have-spam-respStatement =  The responsability statement of the request must not contains spam
+
+

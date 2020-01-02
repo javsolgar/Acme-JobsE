@@ -1,0 +1,36 @@
+employer.job.list.label.reference = Reference
+employer.job.list.label.deadline = Dead-Line
+employer.job.list.label.title = Title
+
+
+
+employer.job.form.label.reference = Reference (try to fix this pattern: e.g:EMP1-JOB3):
+employer.job.form.label.title = Title:
+employer.job.form.label.deadline = Dead-Line:
+employer.job.form.label.salary = Salary:
+employer.job.form.label.moreInfo = More info:
+employer.job.form.label.finalMode = Publish:
+employer.job.form.label.finalMode.false = No
+employer.job.form.label.finalMode.true = Yes
+employer.job.form.label.duties = Click here to see the descriptor
+employer.job.form.label.auditRecords = Click here to see the list of audit records of the job
+employer.job.form.label.description = Description:
+administrator.auditorrequest.form.label.moment = Moment:
+employer.job.form.button.update = Update
+employer.job.form.button.create = Create
+employer.job.form.label.button.return = Return
+employer.job.form.button.delete=Delete
+
+employer.job.error.must-have-title = The Job must have a title
+employer.job.error.must-not-have-spam-title = The title of the job must not be spam
+employer.job.error.must-have-salary = The job must have a salary
+employer.job.error.must-have-salary = The currency of the salary must be Euro(€)
+employer.job.error.must-have-deadline = The job must have a deadline
+employer.job.error.must-be-future = The deadline must at least one week in future
+employer.job.error.must-have-reference = The job must have a reference
+employer.job.error.must-be-not-duplicated-reference = The job can not have a duplicated reference
+employer.job.error.must-have-descriptor = The job must have a description
+employer.job.error.must-not-have-spam-descriptor = The description of the job must not be spam
+employer.job.error.must-100 = The percentage of the duties must sum 100%
+
+

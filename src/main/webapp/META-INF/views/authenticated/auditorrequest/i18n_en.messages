@@ -1,0 +1,15 @@
+authenticated.auditorrequest.form.label.description = Description of the request:
+authenticated.auditorrequest.form.label.firm = Firm:
+authenticated.auditorrequest.form.label.respStatement = Responsability statement:
+
+authenticated.auditorrequest.form.button.create = Create
+authenticated.auditorrequest.form.label.button.return = Return
+
+authenticated.auditorrequest.error.must-have-description = The request must have a description
+authenticated.auditorrequest.error.must-not-have-spam-description = The description of the request must not contain spam
+authenticated.auditorrequest.error.must-have-firm = The request must have a firm
+authenticated.auditorrequest.error.must-not-have-spam-firm = The firm of the request must not contain spam
+authenticated.auditorrequest.error.must-have-respStatement = The request must have a responsability statement
+authenticated.auditorrequest.error.must-not-have-spam-respStatement =  The responsability statement of the request must not contains spam
+authenticated.auditorrequest.error.cannot-request = You can not make a new request while you have pending a auditor request
+authenticated.auditorrequest.error.pattern-status= It must be pending, accepted or rejected

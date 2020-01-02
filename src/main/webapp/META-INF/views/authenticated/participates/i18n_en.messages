@@ -1,0 +1,16 @@
+authenticated.participates.list.label.authenticated = User
+authenticated.participates.form.button.addusers= Add users
+
+
+authenticated.participates.form.label.authenticated = User:
+authenticated.participates.form.label.authenticatedCreate = User (use comma to separate users if you want to add more than one):
+
+authenticated.participates.form.label.button.return = Return
+authenticated.participates.form.label.button.create = Add users
+authenticated.particiaptes.form.label.button.delete = Delete
+
+authenticated.participates.error.users-must-not-be-null = Users to add must not be null
+authenticated.participates.error.not-found-user = The user was not found
+authenticated.participates.error.repeated-users = The user is already on the thread
+authenticated.participates.error.user-not-in-thread = The user is not in the thread
+

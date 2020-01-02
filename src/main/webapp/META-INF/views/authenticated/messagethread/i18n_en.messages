@@ -1,0 +1,22 @@
+authenticated.messagethread.list.label.moment = Moment
+authenticated.messagethread.list.label.title = Title
+
+
+authenticated.messagethread.form.label.title = Title:
+authenticated.messagethread.form.label.moment = Moment:
+authenticated.messagethread.form.label.usernames = Users:
+authenticated.messagethread.form.label.usernames.create = 
+authenticated.messagethread.form.label.message = Messages:
+authenticated.messagethread.form.label.button.return = Return
+authenticated.messagethread.form.button.message= List of messages
+authenticated.messagethread.form.button.users = List of users
+authenticated.messagethread.form.button.message.create= Create a message
+authenticated.messagethread.button.create = Create
+
+authenticated.messagethread.message.usernames = Write the name of the users separated by commas
+authenticated.messagethread.error.must-have-title = The thread must have a title
+authenticated.messagethread.error.must-not-have-spam-title = The thread musn't have spam in the title
+authenticated.messagethread.error.must-have-usernames = The thread must have users
+authenticated.messagethread.error.not-found-user = Some user can't be found
+authenticated.messagethread.error.spam-title = The title of the message thread can not contain spam
+

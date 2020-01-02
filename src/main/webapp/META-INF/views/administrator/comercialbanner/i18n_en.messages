@@ -1,0 +1,38 @@
+administrator.comercialbanner.list.label.slogan = Slogan
+administrator.comercialbanner.list.label.creditCard = Credit Card
+
+administrator.comercialbanner.form.label.urlPicture = Url picture:
+administrator.comercialbanner.form.label.slogan = Slogan:
+administrator.comercialbanner.form.label.urlTarget = Url target:
+administrator.comercialbanner.form.message = Information about your associated credit card
+administrator.comercialbanner.form.label.creditCard = Number of the credit card:
+administrator.comercialbanner.form.label.name = Name of the owner of the credit card:
+administrator.comercialbanner.form.label.surname = Surname:
+administrator.comercialbanner.form.label.expiration = Expiration date of the credit card:
+administrator.comercialbanner.form.label.securityCode = Security code:
+
+administrator.comercialbanner.form.label.finalmode = Publish
+administrator.comercialbanner.form.label.finalmode.true = Yes
+administrator.comercialbanner.form.label.finalmode.false = No
+
+administrator.comercialbanner.form.label.type = Type:
+administrator.comercialbanner.form.label.type.Visa = Visa
+administrator.comercialbanner.form.label.type.Master_Card = Master Card
+administrator.comercialbanner.form.label.type.American_Express = American Express
+administrator.comercialbanner.form.label.type.Dinners_Club = Dinners Club
+
+administrator.comercialbanner.error.must-have-slogan = The comercial banner must have a slogan
+administrator.comercialbanner.error.must-have-not-spam-slogan = The comercial banner must not contains spam in the slogan
+administrator.comercialbanner.error.must-have-expiration = The credit card must have expiration date
+administrator.comercialbanner.error.expirated = The credit card is expirated
+administrator.comercialbanner.error.must-have-creditNumber = The credit card must have a number
+administrator.comercialbanner.error.must-have-name = The credit card must have the name of the owner
+administrator.comercialbanner.error.must-have-surname = The credit card must have the surnames of the owner
+administrator.comercialbanner.error.must-have-securityCode = The credit card must have the security code
+administrator.comercialbanner.error.pattern-securityCode = The security code of the credit card must be 3 numbers
+administrator.comercialbanner.error.pattern-type = The type of the credit card must be Dinners Club, Visa, Master Card o American Express
+
+administrator.comercialbanner.form.label.button.return = Return
+administrator.comercialbanner.form.button.update = Update
+administrator.comercialbanner.form.button.delete = Delete
+administrator.comercialbanner.form.button.create = Create

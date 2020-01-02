@@ -1,0 +1,19 @@
+sponsor.noncomercialbanner.list.label.slogan = Slogan
+sponsor.noncomercialbanner.list.label.jingle = Jingle
+
+sponsor.noncomercialbanner.form.label.finalmode = Publish
+sponsor.noncomercialbanner.form.label.finalmode.true = Yes
+sponsor.noncomercialbanner.form.label.finalmode.false = No
+
+sponsor.noncomercialbanner.form.label.urlPicture = Url picture:
+sponsor.noncomercialbanner.form.label.slogan = Slogan:
+sponsor.noncomercialbanner.form.label.urlTarget = Url target:
+sponsor.noncomercialbanner.form.label.jingle = Jingle:
+
+sponsor.noncomercialbanner.form.label.button.return = Return
+sponsor.noncomercialbanner.form.label.button.create = Create
+sponsor.noncomercialbanner.form.label.button.update = Update
+sponsor.noncomercialbanner.form.label.button.delete = Delete
+sponsor.noncomercialbanner.error.must-have-slogan = The banner must have a slogan
+sponsor.noncomercialbanner.error.must-have-not-spam-slogan = The banner must not contains spam in the slogan
+

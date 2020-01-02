@@ -1,0 +1,14 @@
+worker.auditrecord.list.label.status = Está en modo final
+worker.auditrecord.list.label.moment = Momento
+worker.auditrecord.list.label.title = Titulo
+worker.auditrecord.list.label.auditorUser = Auditor
+
+worker.auditrecord.form.label.jobTitle = Título del trabajo:
+worker.auditrecord.form.label.auditorUser = Auditor:
+worker.auditrecord.form.label.title = Titulo:
+worker.auditrecord.form.label.status = Está en modo final:
+worker.auditrecord.form.label.moment = Momento:
+worker.auditrecord.form.label.body = Cuerpo:
+worker.auditrecord.form.label.button.return = Volver
+
+

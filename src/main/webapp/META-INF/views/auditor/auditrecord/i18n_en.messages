@@ -1,0 +1,31 @@
+auditor.auditrecord.list.label.status = Is Final Mode
+auditor.auditrecord.list.label.moment = Moment
+auditor.auditrecord.list.label.title = Title
+auditor.auditrecord.list.label.auditor = Auditor
+
+auditor.auditrecord.form.label.jobTitle = Title of the job:
+auditor.auditrecord.form.label.auditor = Auditor:
+auditor.auditrecord.form.label.title = Title:
+auditor.auditrecord.form.label.status = Is Final Mode:
+auditor.auditrecord.form.label.moment = Moment:
+auditor.auditrecord.form.label.body = Body:
+auditor.auditrecord.form.label.button.return = Return
+
+auditor.auditrecord.form.label.jref= Reference of the job
+auditor.auditrecord.form.button.create= Create
+auditor.auditrecord.form.checkbox.status= Is final mode:
+auditor.auditrecord.error.must-accept= Must check this box.
+auditor.auditrecord.error.must-exists= The job must exists.
+
+auditor.auditrecord.form.button.update= Update
+
+auditor.auditrecord.form.label.finalMode.true= published
+auditor.auditrecord.form.label.finalMode.false = draft
+auditor.auditrecord.form.label.finalMode= status:
+
+auditor.auditrecord.list.button.addAudit= Create an audit record
+
+auditor.auditrecord.error.spam-title = The title can not contain spam
+auditor.auditrecord.error.spam-body = The body can not contain spam
+auditor.auditrecord.error.already-auditor = You are already an auditor of this job
+

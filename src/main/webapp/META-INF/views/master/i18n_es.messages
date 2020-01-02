@@ -1,0 +1,173 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+# master.banner.welcome #######################################################
+
+master.banner.background = #FFFFFF 
+
+﻿# master.welcome ##############################################################
+
+master.welcome.title = ¡Bienvenidos!
+master.welcome.text = \
+	¡Bienvenidos a Acme Jobs! 
+
+# master.menu #################################################################
+
+master.menu.home = Inicio
+master.menu.sign-up = Registrarse
+master.menu.sign-in = Entrar
+master.menu.sign-out = Salir
+
+# master.menu.anonymous #######################################################
+
+master.menu.anonymous = Anónimo
+master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.announcement.list= Lista de anuncios
+master.menu.anonymous.announcement.form= Crear anuncio
+master.menu.anonymous.investorsrecords.list= Lista de registros de inversionistas
+master.menu.anonymous.topinvestorsrecords.list= Lista de registros de los mejores inversionistas
+master.menu.anonymous.companyrecord.list = Lista de registros de compañías
+master.menu.anonymous.topcompanyrecord.list = Lista de registros de las mejores compañías
+
+
+# master.menu.authenticated ########################################################
+
+master.menu.authenticated= Autentificado
+master.menu.authenticated.announcement.list= Lista de anuncios
+master.menu.authenticated.announcement.form= Crear anuncio
+master.menu.authenticated.request.list = Lista de peticiones
+master.menu.authenticated.investorsrecord.list= Lista de registros de inversionistas
+master.menu.authenticated.offer.list = Lista de ofertas
+master.menu.authenticated.challenge.list = Lista de retos
+master.menu.authenticated.companyrecord.list= Lista de registros de compañías
+master.menu.authenticated.job.list = Lista de ofertas de trabajo activas
+master.menu.authenticated.messagethread.list = Lista de mis hilos de mensajes
+master.menu.authenticated.messagethread.create = Crear un nuevo hilo de mensajes
+
+# master.menu.administrator ###################################################
+
+master.menu.administrator = Administrador
+master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.announcement.list= Lista de anuncios
+master.menu.administrator.announcement.form= Crear anuncio
+master.menu.administrator.configuration.list= Parámetros
+master.menu.administrator.dashboard.show = Indicadores
+master.menu.administrator.announcement.create = Crear anuncio
+master.menu.administrator.investorsrecord.list= Lista de registros de inversionistas
+master.menu.administrator.investorsrecord.create = Crear registro de inversionista
+master.menu.administrator.comercialbanner.list = Lista de anuncios comerciales
+master.menu.administrator.comercialbanner.create = Crear anuncio comercial
+master.menu.administrator.noncomercialbanner.list = Lista de anuncios no comerciales
+master.menu.administrator.noncomercialbanner.create = Crear anuncio no comercial
+master.menu.administrator.challenge.list = Lista de retos
+master.menu.administrator.challenge.create = Crear un reto
+master.menu.administrator.companyrecord.list = Lista de registros de compañías
+master.menu.administrator.companyrecord.create = Crear registro de compañia
+master.menu.administrator.auditorRequest.list = Lista de peticiones de auditor
+
+# master.menu.sponsor ###################################################
+
+master.menu.sponsor = Patrocinador
+master.menu.sponsor.comercialbanner.list = Lista de mis anuncios comerciales
+master.menu.sponsor.comercialbanner.create = Crear anuncio comercial
+master.menu.sponsor.noncomercialbanner.list = Lista de mis anuncios no comerciales
+master.menu.sponsor.noncomercialbanner.create = Crear anuncio no comercial
+
+# master.menu.provider ########################################################
+
+master.menu.provider = Proveedor
+master.menu.provider.favourite-link = Enlace favorito
+master.menu.provider.requestList = Lista de peticiones
+master.menu.provider.requestCreate = Crear una petición
+master.menu.consumer.OfferList = Lista de ofertas
+master.menu.consumer.OfferCreate = Crear una oferta
+
+# master.menu.auditor ########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.list = Lista de trabajos en los que eres auditor
+master.menu.employer.jobCreate = Crear un nuevo trabajo
+master.menu.notauditor.list = Lista de trabajos en los que no eres auditor
+master.menu.auditor.list.mine = Lista de mis registros de auditorías
+
+# master.menu.consumer ##########################################################
+
+master.menu.consumer = Consumidor
+master.menu.consumer.favourite-link = Enlace favorito
+master.menu.consumer.requestList = Lista de peticiones
+
+# master.menu.employer ##########################################################
+
+master.menu.employer = Empleador
+master.menu.employer.jobList = Lista de mis trabajos
+master.menu.employer.applicationList = Lista de aplicaciones a mis trabajos
+
+# master.menu.worker ##########################################################
+
+master.menu.worker = Trabajador
+master.menu.worker.applicationList = Lista de mis aplicaciones
+master.menu.worker.job.list = Lista de ofertas de trabajo activas
+
+
+# master.menu.user-account ####################################################
+
+master.menu.user-account = Cuenta
+master.menu.user-account.general-data = Datos generales
+master.menu.user-account.provider = Datos de proveedor
+master.menu.user-account.become-provider = Hazte proveedor
+master.menu.user-account.consumer = Datos de consumidor
+master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.user-account.become-employer = Hazte empleador
+master.menu.user-account.employer = Datos de empleador
+master.menu.user-account.become-worker = Hazte trabajador
+master.menu.user-account.worker = Datos de trabajador
+master.menu.user-account.become-auditor = Hacer petición para convertirse en auditor
+master.menu.user-account.auditor = Datos de auditor
+master.menu.user-account.become-sponsor = Hazte sponsor
+master.menu.user-account.sponsor = Datos de sponsor
+
+
+
+﻿# master.footer ###############################################################
+
+master.footer.title.about = Nosotros
+master.footer.label.company = La empresa
+master.footer.label.license = Licencia
+master.footer.title.social = Social
+master.footer.label.linked-in = Linked-In
+master.footer.label.twitter = Twitter
+master.footer.title.languages = Lenguages
+master.footer.label.english = Inglés
+master.footer.label.spanish = Español
+
+# master.company ##############################################################
+
+master.company.title = La compañía
+master.company.text = \
+	Acme Jobs, Inc. es un proyecto de un grupo de estudiantes de \
+	la asignatura Diseño y Pruebas, en el Grado \
+	en Ingeniería del Software de la Universidad de Sevilla.
+master.company.name = Acme Jobs, Inc.
+master.company.address = Calle, número, Ciudad, Estado, País
+master.company.phone = +000 123 456
+master.company.email = contact@acme.com
+
+# master.license ##############################################################
+
+master.license.title = Licencia
+master.license.text = \
+	Puede usar este sistema de forma completamente gratuita respetando las leyes \
+	que sean aplicables.  No compartimos ninguna información sobre Ud. con ninguna \
+	otra empresa.  Tan sólo usamos tres cookies, a saber: "JSESSIONID" para identificar \
+	su sesión de trabajo, "remember" para mantener su información de autentificación \
+	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
+	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
+	local de su navegador para saber dónde tienen que ir algunos botones.

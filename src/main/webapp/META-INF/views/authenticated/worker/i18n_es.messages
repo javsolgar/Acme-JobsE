@@ -1,0 +1,6 @@
+authenticated.worker.form.label.qualificationRecord = Cualificaciones:
+authenticated.worker.form.label.skillRecord = Habilidades:
+
+authenticated.worker.form.label.button.create = Crear
+authenticated.worker.form.label.button.update = Actualizar
+authenticated.worker.form.label.button.return = Volver

@@ -1,0 +1,16 @@
+authenticated.participates.list.label.authenticated = Usuario
+authenticated.participates.form.button.addusers= Añadir usuarios
+
+
+
+authenticated.participates.form.label.authenticated = Usuario:
+authenticated.participates.form.label.authenticatedCreate = Usuario (use comas para separar los usuarios si quiere añadir más de uno):
+
+authenticated.participates.form.label.button.return = Volver
+authenticated.participates.form.label.button.create = Añadir usuarios
+authenticated.particiaptes.form.label.button.delete = Borrar
+
+authenticated.participates.error.users-must-not-be-null = Los usuarios a añadir no peden ser nulos
+authenticated.participates.error.not-found-user = El usuario no ha sido encontrado
+authenticated.participates.error.repeated-users = El usuario ya pertenece al hilo
+authenticated.participates.error.user-not-in-thread = El usuario no pertenece al hilo

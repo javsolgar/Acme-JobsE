@@ -1,0 +1,30 @@
+employer.application.list.label.job = Job
+employer.application.list.label.status = Status
+employer.application.list.label.moment = Moment
+employer.application.list.label.reference = Reference
+
+employer.application.form.label.message.info = Information of the application:
+employer.application.form.label.job = Job:
+employer.application.form.label.employer = employer:
+employer.application.form.label.status = Status:
+employer.application.form.label.status.pending = pending
+employer.application.form.label.status.accepted = accepted
+employer.application.form.label.status.rejected = rejected
+employer.application.form.label.skills = Skills:
+employer.application.form.label.qualifications = Qualifications:
+employer.application.form.label.moment = Moment:
+employer.application.form.label.reference = Reference:
+employer.application.form.label.justification = Justification:
+employer.application.form.label.statement = Statement:
+
+employer.application.form.label.message = Change status of application:
+
+employer.application.form.button.update = Update
+
+employer.application.form.label.button.return = Return
+employer.application.error.pattern-status=It must be pending, accepted or rejected
+
+employer.request.error.must-justificated = The rejected application must have a mandatory justification
+worker.application.error.had-applicated = You have already applicated to this job
+
+

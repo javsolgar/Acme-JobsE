@@ -1,0 +1,38 @@
+sponsor.comercialbanner.list.label.slogan = Eslogan
+sponsor.comercialbanner.form.message = Información sobre tu tarjeta de credito asociada
+sponsor.comercialbanner.form.label.creditNumber = Número de la tarjeta de credito:
+sponsor.comercialbanner.form.label.name = Nombre del dueño de la tarjeta de credito:
+sponsor.comercialbanner.form.label.surname = Apellidos:
+sponsor.comercialbanner.form.label.expiration = Fecha de caducidad de la tarjeta de credito:
+sponsor.comercialbanner.form.label.securityCode = Codigo de seguridad:
+
+sponsor.comercialbanner.form.label.urlPicture = Url de imagen:
+sponsor.comercialbanner.form.label.slogan = Eslogan:
+sponsor.comercialbanner.form.label.urlTarget = Url del anuncio:
+sponsor.comercialbanner.form.label.creditCard = Tarjeta de credito:
+sponsor.comercialbanner.form.label.finalmode = Publicar
+sponsor.comercialbanner.form.label.finalmode.true = Si
+sponsor.comercialbanner.form.label.finalmode.false = No
+
+sponsor.comercialbanner.form.label.type = Type:
+sponsor.comercialbanner.form.label.type.Visa = Visa
+sponsor.comercialbanner.form.label.type.Master_Card = Master Card
+sponsor.comercialbanner.form.label.type.American_Express = American Express
+sponsor.comercialbanner.form.label.type.Dinners_Club = Dinners Club
+
+
+sponsor.comercialbanner.form.label.button.create = Crear
+sponsor.comercialbanner.form.label.button.update = Actualizar
+sponsor.comercialbanner.form.label.button.return = Volver
+sponsor.comercialbanner.form.label.button.delete = Borrar
+
+sponsor.comercialbanner.error.must-have-slogan = El banner comercial debe de tener un eslogan
+sponsor.comercialbanner.error.must-have-not-spam-slogan = El banner comercial no debe de contener spam en el eslogan
+sponsor.sponsor.error.must-have-expiration = La tarjeta de credito debe de tener una fecha de caducidad
+sponsor.comercialbanner.error.expirated = La tarjeta de credito esta caducada
+sponsor.comercialbanner.error.must-have-creditNumber = La tarjeta de credito debe de tener un número
+sponsor.comercialbanner.error.must-have-name = La tarjeta de credito debe de tener el nombre del dueño
+sponsor.comercialbanner.error.must-have-surname = La tarjeta de credito debe de tener los apellidos del dueño
+sponsor.comercialbanner.error.must-have-securityCode = La tarjeta de credito debe de tener el codigo de seguridad
+sponsor.comercialbanner.error.pattern-securityCode= El codigo de seguridad deben de ser 3 números
+sponsor.comercialbanner.error.pattern-type = El tipo de la tarjeta de crédito debe ser Dinners Club, Visa, Master Card o American Express

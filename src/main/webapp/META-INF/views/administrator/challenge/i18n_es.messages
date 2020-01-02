@@ -1,0 +1,33 @@
+administrator.challenge.list.label.title = Título
+administrator.challenge.list.label.description = Descripción
+administrator.challenge.list.label.deadline = Fecha Límite
+administrator.challenge.list.label.rewardGold = Objetivo Oro
+administrator.challenge.list.label.rewardSilver = Objetivo Plata
+administrator.challenge.list.label.rewardBronze = Objetivo Bronce
+administrator.challenge.form.label.id = ID
+
+administrator.challenge.form.label.title = Título:
+administrator.challenge.form.label.description = Descripción:
+administrator.challenge.form.label.deadline = Fecha Límite:
+administrator.challenge.form.label.rewardGold = Recompensa Oro:
+administrator.challenge.form.label.goalGold = Objetivo Oro:
+administrator.challenge.form.label.rewardSilver = Recompensa Plata:
+administrator.challenge.form.label.goalSilver = Objetivo Plata:
+administrator.challenge.form.label.rewardBronze = Recompensa Bronce:
+administrator.challenge.form.label.goalBronze = Objetivo Bronce:
+administrator.challenge.form.label.ticker = Ticker:
+administrator.challenge.form.label.button.return = Volver
+administrator.challenge.form.button.create = Crear
+administrator.challenge.form.button.update = Actualizar
+administrator.challenge.form.button.delete = Borrar
+
+administrator.challenge.error.must-have-goal = El campo del objetivo no puede estar vacío.
+administrator.challenge.error.goldFirst = La recompensa de oro debe ser la más alta o igual que las otras.
+administrator.challenge.error.silverSecond = La recompensa de plata debe de ser mas baja que la de oro y mas alta que la de bronce, o al menos igual que las otras. 
+administrator.challenge.error.bronzeThird = La recompensa de bronze debe de ser la más baja, o al menos igual que las otras
+administrator.challenge.error.must-have-reward = El campo no puede estar vacío.
+administrator.challenge.error.must-be-future = La fecha debe ser posterior a la actual.
+administrator.challenge.error.must-have-deadline = La fecha límite no puede estar vacía.
+administrator.challenge.error.must-be-eur = La moneda de la recompensa debe de ser Euros (€).
+
+

@@ -1,0 +1,18 @@
+authenticated.creditcard.form.label.orgName = Nombre de la organización:
+authenticated.creditcard.form.message = Información sobre tu tarjeta de credito asociada
+authenticated.creditcard.form.label.creditNumber = Número de la tarjeta de credito:
+authenticated.creditcard.form.label.name = Nombre del dueño de la tarjeta de credito:
+authenticated.creditcard.form.label.surname = Apellidos:
+authenticated.creditcard.form.label.expiration = Fecha de caducidad de la tarjeta de credito:
+authenticated.creditcard.form.label.securityCode = Codigo de seguridad:
+
+authenticated.creditcard.form.label.button.create = Crear
+authenticated.creditcard.form.label.button.update = Actualizar
+authenticated.creditcard.form.label.button.return = Volver
+
+authenticated.creditcard.error.must-have-expiration = La tarjeta de credito debe de tener una fecha de caducidad
+authenticated.creditcard.error.expirated = La tarjeta de credito esta caducada
+authenticated.creditcard.error.must-have-creditNumber = La tarjeta de credito debe de tener un número
+authenticated.creditcard.error.must-have-name = La tarjeta de credito debe de tener el nombre del dueño
+authenticated.creditcard.error.must-have-surname = La tarjeta de credito debe de tener los apellidos del dueño
+authenticated.creditcard.error.must-have-securityCode = La tarjeta de credito debe de tener el codigo de seguridad

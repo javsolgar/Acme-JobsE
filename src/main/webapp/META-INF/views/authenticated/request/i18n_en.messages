@@ -1,0 +1,28 @@
+authenticated.request.list.label.title = Title
+authenticated.request.list.label.description = Description
+authenticated.request.list.label.reward = Reward
+authenticated.request.list.label.deadline = Dead-Line
+authenticated.request.list.label.moment = Publication
+authenticated.request.list.label.ticker = Ticker
+
+
+authenticated.request.form.label.title = Title:
+authenticated.request.form.label.description = Description:
+authenticated.request.form.label.reward = Reward:
+authenticated.request.form.label.amount = Amount:
+authenticated.request.form.label.currency = Currency:
+authenticated.request.form.label.deadline = Dead-Line:
+authenticated.request.form.label.moment = Publication:
+authenticated.request.form.label.ticker = Ticker:
+authenticated.request.form.message.explanation = If you create the request you won't be able to delete or update it
+authenticated.request.form.checkbox.agree = I understand it
+authenticated.request.form.label.button.return = Return
+authenticated.request.form.button.create = Create
+
+
+authenticated.request.form.label.euro = Euro
+
+
+authenticated.request.error.tickerDuplicated = The ticker musn't match with the ticker of any request created previously
+authenticated.request.error.must-accept = You must accept the condition, wich says that you can't delete or update the request
+

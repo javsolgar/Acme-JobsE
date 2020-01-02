@@ -1,0 +1,32 @@
+consumer.offers.list.label.title = Título
+consumer.offers.list.label.description = Descripción
+consumer.offers.list.label.lower = Rango Menor
+consumer.offers.list.label.major = Rango Mayor
+consumer.offers.list.label.deadline = Fecha Límite
+consumer.offers.list.label.moment = Publicación
+
+
+consumer.offers.form.label.title = Título:
+consumer.offers.form.label.description = Descripción:
+consumer.offers.form.label.lower = Rango Menor:
+consumer.offers.form.label.major = Rango Mayor:
+consumer.offers.form.label.deadline = Fecha Límite:
+consumer.offers.form.label.moment = Publicación:
+consumer.offers.form.label.ticker = Ticker:
+consumer.offers.form.message.explanation = Sí creas la oferta no podrás borrarla o editarla despúes
+consumer.offers.form.checkbox.agree = Lo entiendo
+consumer.offers.form.label.button.return = Volver
+consumer.offers.form.button.create = Crear
+
+
+
+
+consumer.challenge.error.must-be-future = La fecha debe ser posterior a la actual
+consumer.challenge.error.must-have-deadline = La fecha límite no puede estar vacía
+consumer.offers.error.tickerDuplicated = El ticker no debe coincidir con ninguna otra oferta creada previamente
+consumer.offers.error.must-accept = Debes aceptar la condición de no poder borrar ni editar las ofertas creadas
+consumer.offers.error.notRange = La cifra superior del rango de la recompensa debe ser mayor que la cifran inferior
+consumer.offers.error.must-have-ticker = La oferta debe de tener un ticker
+consumer.offers.error.not-range = El parámetro no puede estar vacío
+consumer.offers.error.must-be-euro = La moneda debe ser el Euro (€)
+consumer.offers.error.pattern-ticker= Debe seguir la siguiente estructura OABCD-00001

@@ -1,0 +1,15 @@
+anonymous.topcompanyrecord.list.label.name = Nombre
+anonymous.topcompanyrecord.list.label.sector = Sector
+anonymous.topcompanyrecord.list.label.website = Sitio Web
+anonymous.topcompanyrecord.list.label.email = Email
+
+anonymous.topcompanyrecord.form.label.name = Nombre:
+anonymous.topcompanyrecord.form.label.sector = Sector:
+anonymous.topcompanyrecord.form.label.ceo = CEO:
+anonymous.topcompanyrecord.form.label.description = Descripción:
+anonymous.topcompanyrecord.form.label.website = Sitio Web:
+anonymous.topcompanyrecord.form.label.phone = Teléfono:
+anonymous.topcompanyrecord.form.label.email = Email:
+anonymous.topcompanyrecord.form.label.incorporated = Incorporado:
+anonymous.topcompanyrecord.form.label.stars = Estrellas:
+anonymous.topcompanyrecord.form.label.button.return = Volver

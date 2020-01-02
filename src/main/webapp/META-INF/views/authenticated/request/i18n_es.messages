@@ -1,0 +1,28 @@
+authenticated.request.list.label.title = Título
+authenticated.request.list.label.description = Descripción
+authenticated.request.list.label.reward = Recompensa
+authenticated.request.list.label.deadline = Fecha Límite
+authenticated.request.list.label.moment = Publicación
+authenticated.request.list.label.ticker = Ticker
+
+
+authenticated.request.form.label.title = Título:
+authenticated.request.form.label.description = Descripción:
+authenticated.request.form.label.reward = Recompensa:
+authenticated.request.form.label.amount = Cantidad:
+authenticated.request.form.label.currency = Moneda:
+authenticated.request.form.label.deadline = Fecha Límite:
+authenticated.request.form.label.moment = Publicación:
+authenticated.request.form.label.ticker = Ticker:
+authenticated.request.form.message.explanation = Sí creas la petición no podrás borrarla o editarla despúes
+authenticated.request.form.checkbox.agree = Lo entiendo
+authenticated.request.form.label.button.return = Volver
+authenticated.request.form.button.create = Crear
+
+
+authenticated.request.form.label.euro = Euro
+
+
+
+authenticated.request.error.tickerDuplicated = El ticker no debe coincidir con ninguna otra petición creada previamente
+authenticated.request.error.must-accept = Debes aceptar la condición de no poder borrar ni editar las peticiones creadas

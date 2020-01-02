@@ -1,0 +1,12 @@
+employer.descriptor.list.label.description = Descripción:
+
+
+employer.descriptor.form.label.jobTitle = Título deel trabajo de este deber:
+employer.descriptor.form.label.jobId = Id del trabajo de este deber:
+employer.descriptor.form.label.duties= Haz click aquí para ver las tareas
+employer.descriptor.form.label.description = Descripción:
+employer.descriptor.form.button.update = Actualizar
+employer.descriptor.form.label.button.return = Volver
+
+employer.descriptor.error.must-have-description = El descriptor debe de tener una descripción
+employer.descriptor.error.must-not-be-spam = La descripción no puede tener spam

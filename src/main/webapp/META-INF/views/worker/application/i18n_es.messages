@@ -1,0 +1,25 @@
+worker.application.list.label.job = Trabajo
+worker.application.list.label.status = Status
+worker.application.list.label.moment = Momento
+worker.application.list.label.reference = Referencia
+
+
+worker.application.form.label.job = Trabajo:
+worker.application.form.label.worker = Trabajador:
+worker.application.form.label.status = Estado:
+worker.application.form.label.skills = Habilidades:
+worker.application.form.label.qualifications = Cualificaciones:
+worker.application.form.label.moment = Momento:
+worker.application.form.label.reference = Referencia:
+worker.application.form.label.statement = Defensa:
+worker.application.form.label.justification = Justificación:
+worker.application.form.label.button.return = Volver
+worker.application.form.label.button.create = Crear
+
+worker.application.error.must-have-reference = La referencia no puede ser nula.
+worker.application.error.must-be-unique = La referencia debe ser única
+worker.application.error.must-be-pending = El estado debe ser "pendiente"
+worker.application.error.must-have-skills = Las habilidades no pueden ser nulas
+worker.application.error.must-have-qualifications = Las calificaciones no pueden ser nulas
+worker.application.error.must-have-statement = La sentencia no debe ser nula
+worker.application.error.pattern-status= Debe ser pending, accepted o rejected

@@ -1,0 +1,15 @@
+employer.descriptor.list.label.description = Description
+
+employer.descriptor.form.label.jobTitle = Title of the job of this duty:
+employer.descriptor.form.label.jobId = Id of the job of this duty:
+employer.descriptor.form.label.duties= Click here to see the duties
+employer.descriptor.form.label.description = Description:
+employer.descriptor.form.button.update = Update
+employer.descriptor.form.label.button.return = Return
+
+employer.descriptor.error.must-have-description = The descriptor must have a description
+employer.descriptor.error.must-not-be-spam = The description of the descriptor must not be spam
+
+
+
+

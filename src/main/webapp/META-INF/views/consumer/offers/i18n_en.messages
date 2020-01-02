@@ -1,0 +1,28 @@
+consumer.offers.list.label.title = Title
+consumer.offers.list.label.description = Description
+consumer.offers.list.label.lower = Lower Range
+consumer.offers.list.label.major = Major Range
+consumer.offers.list.label.deadline = Dead-Line
+consumer.offers.list.label.moment = Publication
+
+consumer.offers.form.label.title = Title:
+consumer.offers.form.label.description = Description:
+consumer.offers.form.label.lower = Lower Range:
+consumer.offers.form.label.major = Major Range:
+consumer.offers.form.label.deadline = Dead-Line:
+consumer.offers.form.label.moment = Publication:
+consumer.offers.form.label.ticker = Ticker:
+consumer.offers.form.message.explanation = If you create the offer you won't be able to delete or update it
+consumer.offers.form.checkbox.agree = I understand it
+consumer.offers.form.label.button.return = Return
+consumer.offers.form.button.create = Create
+
+consumer.offers.error.must-be-future= The date must be later than the actual date
+consumer.offers.error.must-have-deadline = The deadline musn't be empty
+consumer.offers.error.notRange = The highest amount must be bigger than the lower amount
+consumer.offers.error.tickerDuplicated = The ticker musn't match with any offer created before
+consumer.offers.error.must-accept = You must accept the condition, which says that you can't delete or update the offer
+consumer.offers.error.must-have-ticker = The offer must have a ticker
+consumer.offers.error.not-range = The parameter musn't be empty
+consumer.offers.error.must-be-euro = The currency must be Euros (€)
+consumer.offers.error.pattern-ticker= It must follow the next structure OABCD-00001

@@ -1,0 +1,30 @@
+auditor.auditrecord.list.label.status = Está en modo final
+auditor.auditrecord.list.label.moment = Momento
+auditor.auditrecord.list.label.title = Titulo
+auditor.auditrecord.form.label.auditor = Auditor
+
+auditor.auditrecord.form.label.jobTitle = Título del trabajo:
+auditor.auditrecord.form.label.auditor = Auditor:
+auditor.auditrecord.form.label.title = Titulo:
+auditor.auditrecord.form.label.status = Está en modo final:
+auditor.auditrecord.form.label.moment = Momento:
+auditor.auditrecord.form.label.body = Cuerpo:
+auditor.auditrecord.form.label.button.return = Volver
+
+auditor.auditrecord.form.label.jref= Referencia de un trabajo
+auditor.auditrecord.form.button.create= Crear
+auditor.auditrecord.form.checkbox.status= Es modo final:
+auditor.auditrecord.error.must-accept= Debes marcar la casilla.
+auditor.auditrecord.error.must-exists= El trabajo debe existir.
+
+auditor.auditrecord.form.button.update = Actualizar
+
+auditor.auditrecord.form.label.finalMode.true= publicado
+auditor.auditrecord.form.label.finalMode.false = oculto
+auditor.auditrecord.form.label.finalMode= status:
+
+auditor.auditrecord.list.button.addAudit= Crear un registro de auditoría
+
+auditor.auditrecord.error.spam-title = El título no puede contener spam
+auditor.auditrecord.error.spam-body = El cuerpo no puede contener spam
+auditor.auditrecord.error.already-auditor = Ya eres un auditor de este trabajo

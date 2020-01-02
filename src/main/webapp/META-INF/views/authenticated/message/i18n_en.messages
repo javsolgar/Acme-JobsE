@@ -1,0 +1,26 @@
+authenticated.message.list.label.moment = Moment
+authenticated.message.list.label.title = Title
+
+
+
+authenticated.message.form.label.threadTitle = Title of the thread of the message:
+authenticated.message.form.label.threadId = Id of the thread of the message:
+authenticated.message.form.label.title = Title:
+authenticated.message.form.label.moment = Moment:
+authenticated.message.form.label.tags = Tags:
+authenticated.message.form.label.body = Body:
+authenticated.message.form.checkbox.agree = I understand it
+
+
+authenticated.message.error.must-accept = You must accept the condition, which says that you can't delete or update the message
+authenticated.message.form.button.create= Create
+
+authenticated.message.form.label.button.return = Return
+
+authenticated.messagethread.error.spam-title = The title must not contain spam
+authenticated.messagethread.error.spam-tags = The tags must not contain spam
+authenticated.messagethread.error.spam-body = The body must not contain spam
+authenticated.message.error.must-be-yours = You must be a participant of the thread
+
+
+

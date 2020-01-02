@@ -1,0 +1,21 @@
+authenticated.creditcard.form.label.orgName = Organization name:
+authenticated.creditcard.form.message = Information about your associated credit card
+authenticated.creditcard.form.label.creditNumber = Number of the credit card:
+authenticated.creditcard.form.label.name = Name of the owner of the credit card:
+authenticated.creditcard.form.label.surname = Surname:
+authenticated.creditcard.form.label.expiration = Expiration date of the credit card:
+authenticated.creditcard.form.label.securityCode = Security code:
+
+authenticated.creditcard.form.button.create = Register
+authenticated.creditcard.form.button.update = Update
+authenticated.creditcard.form.label.button.return = Return
+
+authenticated.creditcard.error.must-have-expiration = The credit card must have expiration date
+authenticated.creditcard.error.expirated = The credit card is expirated
+authenticated.creditcard.error.must-have-creditNumber = The credit card must have a number
+authenticated.creditcard.error.must-have-name = The credit card must have the name of the owner
+authenticated.creditcard.error.must-have-surname = The credit card must have the surnames of the owner
+authenticated.creditcard.error.must-have-securityCode = The credit card must have the security code
+authenticated.creditcard.error.must-have-securityCode-pattern = The security code of the credit card must be 3 numbers
+
+

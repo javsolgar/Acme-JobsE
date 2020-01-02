@@ -1,0 +1,18 @@
+sponsor.noncomercialbanner.list.label.slogan = Eslogan
+sponsor.noncomercialbanner.list.label.jingle = Jingle
+
+sponsor.noncomercialbanner.form.label.finalmode = Publicar
+sponsor.noncomercialbanner.form.label.finalmode.true = Si
+sponsor.noncomercialbanner.form.label.finalmode.false = No
+
+sponsor.noncomercialbanner.form.label.urlPicture = Url de imagen:
+sponsor.noncomercialbanner.form.label.slogan = Eslogan:
+sponsor.noncomercialbanner.form.label.urlTarget = Url del anuncio:
+sponsor.noncomercialbanner.form.label.jingle = Jingle:
+
+sponsor.noncomercialbanner.form.label.button.return = Volver
+sponsor.noncomercialbanner.form.label.button.create = Crear
+sponsor.noncomercialbanner.form.label.button.update = Actualizar
+sponsor.noncomercialbanner.form.label.button.delete = Borrar
+sponsor.noncomercialbanner.error.must-have-slogan = El banner comercial debe de tener un eslogan
+sponsor.noncomercialbanner.error.must-have-not-spam-slogan = El banner comercial no debe de contener spam en el eslogan

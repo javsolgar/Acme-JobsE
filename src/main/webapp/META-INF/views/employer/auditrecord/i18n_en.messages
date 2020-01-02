@@ -1,0 +1,14 @@
+employer.auditrecord.list.label.status = Is Final Mode
+employer.auditrecord.list.label.moment = Moment
+employer.auditrecord.list.label.title = Title
+employer.auditrecord.list.label.auditorUser = Auditor
+
+employer.auditrecord.form.label.jobTitle = Title of the job:
+employer.auditrecord.form.label.auditorUser = Auditor:
+employer.auditrecord.form.label.title = Title:
+employer.auditrecord.form.label.status = Is Final Mode:
+employer.auditrecord.form.label.moment = Moment:
+employer.auditrecord.form.label.body = Body:
+employer.auditrecord.form.label.button.return = Return
+
+

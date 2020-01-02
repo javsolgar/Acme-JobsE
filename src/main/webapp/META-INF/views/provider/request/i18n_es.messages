@@ -1,0 +1,29 @@
+provider.request.list.label.title = Título
+provider.request.list.label.description = Descripción
+provider.request.list.label.reward = Recompensa
+provider.request.list.label.deadline = Fecha Límite
+provider.request.list.label.moment = Publicación
+provider.request.list.label.ticker = Ticker
+
+
+provider.request.form.label.title = Título:
+provider.request.form.label.description = Descripción:
+provider.request.form.label.reward = Recompensa:
+provider.request.form.label.deadline = Fecha Límite:
+provider.request.form.label.moment = Publicación:
+provider.request.form.label.ticker = Ticker:
+provider.request.form.message.explanation = Sí creas la petición no podrás borrarla o editarla despúes
+provider.request.form.checkbox.agree = Lo entiendo
+provider.request.form.label.button.return = Volver
+provider.request.form.button.create = Crear
+
+
+
+
+provider.request.error.tickerDuplicated = El ticker no debe coincidir con ninguna otra petición creada previamente
+provider.request.error.must-accept = Debes aceptar la condición de no poder borrar ni editar las peticiones creadas
+provider.request.error.must-be-future = La fecha límite debe de estar en el futuro
+provider.request.error.must-not-be-null = La fecha no puede ser null
+provider.request.error.must-be-euro = La moneda de la recompensa debe de ser el Euro (€)
+provider.request.error.not-reward = El parámetro de la recompensa no puede ser nulo
+provider.request.error.pattern-ticker= Debe seguir la siguiente estructura OABCD-00001

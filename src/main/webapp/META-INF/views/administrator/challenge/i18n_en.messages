@@ -1,0 +1,31 @@
+administrator.challenge.list.label.title = Title
+administrator.challenge.list.label.description = Description
+administrator.challenge.list.label.deadline = Dead Line
+administrator.challenge.list.label.rewardGold = Gold Goal
+administrator.challenge.list.label.rewardSilver = Silver Goal
+administrator.challenge.list.label.rewardBronze = Bronze Goal
+administrator.challenge.form.label.ticker = Ticker
+
+administrator.challenge.form.label.title = Title:
+administrator.challenge.form.label.description = Description:
+administrator.challenge.form.label.deadline = Dead Line:
+administrator.challenge.form.label.rewardGold = Gold Reward:
+administrator.challenge.form.label.goalGold = Gold Goal:
+administrator.challenge.form.label.rewardSilver = Silver Reward:
+administrator.challenge.form.label.goalSilver = Silver Goal:
+administrator.challenge.form.label.rewardBronze = Bronze Reward:
+administrator.challenge.form.label.goalBronze = Bronze Goal:
+administrator.challenge.form.label.ticker = Ticker:
+administrator.challenge.form.label.button.return = Return
+administrator.challenge.form.button.create = Create
+administrator.challenge.form.button.update = Update
+administrator.challenge.form.button.delete = Delete
+
+administrator.challenge.error.must-have-goal = The goal musn't be empty
+administrator.challenge.error.goldFirst = The gold's reward must be bigger or at least equal to the others rewards
+administrator.challenge.error.silverSecond = The silver's reward must be bigger of bronze's reward and lower than gold's reward or at least equal to others rewards 
+administrator.challenge.error.bronzeThird = The bronze's reward must be the lower reward or at least equal to the other rewards
+administrator.challenge.error.must-have-reward = The parameter musn't be empty.
+administrator.challenge.error.must-be-future= The date must be later than the actual date.
+administrator.challenge.error.must-have-deadline = The deadline musn't be empty.
+administrator.challenge.error.must-be-eur = The currency of the reward must be Euros (€).

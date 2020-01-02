@@ -1,0 +1,3 @@
+administrator.configuration.form.label.spamThreshold = Umbral de Spam:
+administrator.configuration.form.label.spamWords = Palabras de Spam:
+administrator.configuration.form.label.button.return = Volver

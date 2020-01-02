@@ -1,0 +1,15 @@
+authenticated.auditorrequest.form.label.description = Descripción de la petición:
+authenticated.auditorrequest.form.label.firm = Firma:
+authenticated.auditorrequest.form.label.respStatement = Puesto de responsabilidad:
+
+authenticated.auditorrequest.form.button.create = Crear
+authenticated.auditorrequest.form.label.button.return = Volver
+
+authenticated.auditorrequest.error.must-have-description = La petición debe contener una descripción
+authenticated.auditorrequest.error.must-not-have-spam-description = La descripción de la petición no debe de contener spam
+authenticated.auditorrequest.error.must-have-firm = La petición debe de contener una firma
+authenticated.auditorrequest.error.must-not-have-spam-firm = La firma de la petición no puede contener spam
+authenticated.auditorrequest.error.must-have-respStatement = La petición debe de contener un puesto de responsabilidad
+authenticated.auditorrequest.error.must-not-have-spam-respStatement =  El puesto de responsabilidad no debe de contener spam
+authenticated.auditorrequest.error.cannot-request = No puedes crear una nueva petición mientras tengas otra pendiente de revision
+authenticated.auditorrequest.error.pattern-status= Debe ser pending, accepted o rejected

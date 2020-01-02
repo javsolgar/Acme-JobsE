@@ -1,0 +1,15 @@
+authenticated.auditor.form.label.description = Descripción de la petición:
+authenticated.auditor.form.label.firm = Firma:
+authenticated.auditor.form.label.respStatement = Puesto de responsabilidad:
+
+authenticated.auditor.form.button.update = Actualizar
+authenticated.auditor.form.label.button.return = Volver
+
+authenticated.auditor.error.must-have-description = La petición debe contener una descripción
+authenticated.auditor.error.must-not-have-spam-description = La descripción de la petición no debe de contener spam
+authenticated.auditor.error.must-have-firm = La petición debe de contener una firma
+authenticated.auditor.error.must-not-have-spam-firm = La firma de la petición no puede contener spam
+authenticated.auditor.error.must-have-respStatement = La petición debe de contener un puesto de responsabilidad
+authenticated.auditor.error.must-not-have-spam-respStatement =  El puesto de responsabilidad no debe de contener spam
+
+

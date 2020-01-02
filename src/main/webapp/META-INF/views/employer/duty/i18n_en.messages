@@ -1,0 +1,27 @@
+employer.duty.list.label.title = Title
+employer.duty.list.label.percentage = Percentage
+employer.duty.list.label.description = Description
+
+
+
+
+employer.duty.form.label.jobTitle = Title of the job of this duty:
+employer.duty.form.label.jobId = Id of the job of this duty:
+employer.duty.form.label.title = Title:
+employer.duty.form.label.percentage = Percentage:
+employer.duty.form.label.description = Description:
+employer.duty.form.label.button.return = Return
+employer.duty.list.button.addDuty = Add new duty
+employer.duty.form.button.update = Update
+employer.duty.form.button.create = Create
+employer.duty.form.button.delete = Delete
+
+
+employer.duty.error.must-not-be-spam = The description must not be spam
+employer.duty.error.must-have-description= Duty must have a description
+employer.duty.error.must-have-title = The duty must have a title
+employer.duty.error.must-not-have-title-spam = The duty musn't have a title with spam
+employer.duty.error.must-not-have-percentage = The duty must have a percentage
+employer.duty.error.must-be-a-percentage = The value of the percentage must be between 0% and 100%
+employer.duty.error.must-be-less-or-equal-than-101 = The sum of the percentage of all duties must be lower or equal than 100%
+

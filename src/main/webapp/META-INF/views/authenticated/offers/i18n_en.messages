@@ -1,0 +1,27 @@
+authenticated.offers.list.label.title = Title
+authenticated.offers.list.label.description = Description
+authenticated.offers.list.label.lower = Lower Range
+authenticated.offers.list.label.major = Major Range
+authenticated.offers.list.label.deadline = Dead-Line
+authenticated.offers.list.label.moment = Publication
+
+authenticated.offers.form.label.title = Title:
+authenticated.offers.form.label.description = Description:
+authenticated.offers.form.label.lower = Lower Range:
+authenticated.offers.form.label.major = Major Range:
+authenticated.offers.form.label.currency = Currency:
+authenticated.offers.form.label.amountMajor = Highest Amount of reward's range:
+authenticated.offers.form.label.amountLower = Lower Amount of reward's range:
+authenticated.offers.form.label.deadline = Dead-Line:
+authenticated.offers.form.label.moment = Publication:
+authenticated.offers.form.label.ticker = Ticker:
+authenticated.offers.form.message.explanation = If you create the offer you won't be able to delete or update it
+authenticated.offers.form.checkbox.agree = I understand it
+authenticated.offers.form.label.button.return = Return
+authenticated.offers.form.button.create = Create
+
+authenticated.offers.form.label.euro = Euro
+
+authenticated.offers.error.notRange = The highest amount must be bigger than the lower amount
+authenticated.offers.error.tickerDuplicated = The ticker musn't match with any offer created before
+authenticated.offers.error.must-accept = You must accept the condition, wich says that you can't delete or update the offer

@@ -1,0 +1,21 @@
+authenticated.messagethread.list.label.moment = Momento
+authenticated.messagethread.list.label.title = Título
+
+
+authenticated.messagethread.form.label.title = Título:
+authenticated.messagethread.form.label.moment = Momento:
+authenticated.messagethread.form.label.usernames = Usuarios:
+authenticated.messagethread.form.label.message = Mensajes:
+authenticated.messagethread.form.label.button.return = Volver
+authenticated.messagethread.form.button.message= Lista de mensajes
+authenticated.messagethread.form.button.users = Lista de usuarios
+authenticated.messagethread.form.button.message.create= Crear un mensaje
+authenticated.messagethread.button.create = Crear
+
+authenticated.messagethread.message.usernames = Escriba el nombre de los usuarios separados por comas
+authenticated.messagethread.error.must-have-title = El hilo debe de tener un título
+authenticated.messagethread.error.must-not-have-spam-title = El título del hilo no puede contener spam
+authenticated.messagethread.error.must-have-usernames = El hilo debe tener usuarios participantes
+authenticated.messagethread.error.not-found-user = No se puede encontrar algún usuario
+authenticated.messagethread.error.spam-title = El título del hilo de mensajes no puede contener spam
+

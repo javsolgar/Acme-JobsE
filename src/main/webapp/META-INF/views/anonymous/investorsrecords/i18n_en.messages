@@ -1,0 +1,9 @@
+anonymous.investorsrecords.list.label.name = Name
+anonymous.investorsrecords.list.label.sector = Sector
+anonymous.investorsrecords.list.label.numberStars = Stars' number
+
+anonymous.investorsrecords.form.label.name = Name:
+anonymous.investorsrecords.form.label.sector = Sector:
+anonymous.investorsrecords.form.label.statement = Investing statement:
+anonymous.investorsrecords.form.label.numberStars = Stars' number:
+anonymous.investorsrecords.form.label.button.return = Return

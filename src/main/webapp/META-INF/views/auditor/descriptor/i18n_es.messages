@@ -1,0 +1,9 @@
+authenticated.descriptor.list.label.description = Descripción
+
+authenticated.duty.form.label.jobTitle = Titulo del trabajo de este deber:
+authenticated.duty.form.label.jobId = Id del trabajo de este deber:
+authenticated.descriptor.form.label.duties= Haz click aquí para ver las tareas
+authenticated.descriptor.form.label.description = Descripción:
+authenticated.descriptor.form.label.button.return = Volver
+
+

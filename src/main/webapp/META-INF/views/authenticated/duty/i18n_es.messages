@@ -1,0 +1,13 @@
+authenticated.duty.list.label.title = Título
+authenticated.duty.list.label.percentage = Porcentaje
+authenticated.duty.list.label.description = Descripción
+
+
+authenticated.duty.form.label.jobTitle = Titulo del trabajo de este deber:
+authenticated.duty.form.label.jobId = Id del trabajo de este deber:
+authenticated.duty.form.label.title = Título:
+authenticated.duty.form.label.percentage = Porcentaje:
+authenticated.duty.form.label.description = Descripción:
+authenticated.duty.form.label.button.return = Volver
+
+

@@ -1,0 +1,22 @@
+administrator.auditorrequest.list.label.username =  Username
+administrator.auditorrequest.list.label.description = Description
+administrator.auditorrequest.list.label.status = Status
+administrator.auditorrequest.list.label.moment = Moment
+
+administrator.auditorrequest.form.label.username = Username:
+administrator.auditorrequest.form.label.firm = Firm:
+administrator.auditorrequest.form.label.respStatement = Responsability statement:
+administrator.auditorrequest.form.label.status = Status:
+administrator.auditorrequest.form.label.pending = Pending
+administrator.auditorrequest.form.label.accepted = Accepted
+administrator.auditorrequest.form.label.rejected = Rejected
+administrator.auditorrequest.form.label.description = Description of the request:
+administrator.auditorrequest.form.label.moment = Moment:
+
+administrator.auditorrequest.form.label.button.update = Update
+administrator.auditorrequest.form.label.button.return = Return
+
+administrator.auditorrequest.error.must-have-description = The request must have a description
+administrator.auditorrequest.error.must-not-have-spam-description = The description of the request must not contain spam
+administrator.auditorrequest.error.pattern-status=It must be pending, accepted or rejected
+

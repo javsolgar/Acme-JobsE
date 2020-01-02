@@ -1,0 +1,15 @@
+authenticated.auditrecord.list.label.status = Status
+authenticated.auditrecord.list.label.moment = Moment
+authenticated.auditrecord.list.label.title = Title
+authenticated.auditrecord.list.label.auditorUser = Auditor
+
+authenticated.auditrecord.form.label.auditorUser = Auditor:
+authenticated.auditrecord.form.label.jobTitle = Title of the job of this audit record:
+authenticated.auditrecord.form.label.jobId = Id of the job of this audit record:
+authenticated.auditrecord.form.label.title = Title:
+authenticated.auditrecord.form.label.status = Status:
+authenticated.auditrecord.form.label.moment = Moment:
+authenticated.auditrecord.form.label.body = Body:
+authenticated.auditrecord.form.label.button.return = Return
+
+
