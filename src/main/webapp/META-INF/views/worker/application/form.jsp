@@ -9,9 +9,6 @@
 	<acme:form-moment code="worker.application.form.label.moment" path="moment"/>
 	</jstl:if>
 	
-	
-	<!--  jstl:set var="challenge" value="${hasChallenge}"/>-->
-	
 	<acme:form-textarea code="worker.application.form.label.skills" path="skills"/>
 	<acme:form-textarea code="worker.application.form.label.statement" path="statement"/>
 	<acme:form-textarea code="worker.application.form.label.qualifications" path="qualifications"/>

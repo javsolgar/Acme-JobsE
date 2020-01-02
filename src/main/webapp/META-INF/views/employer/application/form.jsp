@@ -11,6 +11,18 @@
 	<acme:form-textbox code="employer.application.form.label.reference" path="reference" readonly="true"/>
 	<acme:form-textarea code="employer.application.form.label.statement" path="statement" readonly="true"/>
 	
+	
+	<jstl:if test="${hasXXX == true && hasPassword == false}">
+	<h4><acme:message code="employer.application.form.message.answer"/></h4>
+	<acme:form-textbox code="employer.application.form.label.answer" path="answer"/>
+	<acme:form-textbox code="employer.application.form.label.optionalApplication" path="optionalApplication"/>
+	</jstl:if>
+	
+	<jstl:if test="${hasXXX == true && hasPassword == true}">
+	<h4><acme:message code="employer.application.form.message.password"/></h4>
+	</jstl:if>
+
+	
 	<jstl:if test="${status == 'pending' && command == 'show'}">
 	<h3><acme:message code="employer.application.form.label.message"/></h3>
 	<acme:form-select code="employer.application.form.label.status" path="status">
