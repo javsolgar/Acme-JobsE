@@ -35,7 +35,6 @@ public class Job extends DomainEntity {
 	@Column(unique = true)
 	@NotBlank
 	@Length(min = 5, max = 10)
-	//@Pattern(regexp = "^[a-zA-Z]{4}[-][a-zA-Z]{4}$")
 	private String				reference;
 
 	@NotBlank
@@ -55,6 +54,15 @@ public class Job extends DomainEntity {
 	private boolean				finalMode;
 
 	private boolean				hasApplication;
+
+	@Length(max = 200)
+	@Column(length = 1024)
+	private String				textChallenge;
+
+	@URL
+	private String				linkInfo;
+
+	private boolean				hasChallenge;
 
 	//	Relationships -------------------------------------------------------------------------
 

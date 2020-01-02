@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -32,7 +33,6 @@ public class Application extends DomainEntity {
 
 	@Column(unique = true)
 	@NotBlank
-	//	@Pattern(regexp = "^[a-zA-Z]{4}[-][a-zA-Z]{4}[:][a-zA-Z]{4}$", message = "application.pattern.error")
 	private String				reference;
 
 	@NotNull
@@ -57,16 +57,37 @@ public class Application extends DomainEntity {
 
 	private String				justification;
 
+	@Column(length = 1024)
+	private String				answer;
+
+	private String				optionalApplication;
+
+	//@Length(max = 200)
+	private String				password;
+
+	private boolean				hasXXXX;
+
+	private boolean				hasPassword;
+
+
+	//Derivated atributes --------------------------------------------------------------------
+
+	@Transient
+	public boolean getHasChallenge() {
+		return this.job.isHasChallenge();
+	}
+
+
 	//	Relationships -------------------------------------------------------------------------
 
 	@NotNull
 	@Valid
 	@ManyToOne(optional = false)
-	private Worker				worker;
+	private Worker	worker;
 
 	@NotNull
 	@Valid
 	@ManyToOne(optional = false)
-	private Job					job;
+	private Job		job;
 
 }

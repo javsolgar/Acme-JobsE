@@ -54,7 +54,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo");
+		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "textChallenge", "linkInfo");
 
 	}
 
@@ -68,6 +68,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 
 		Job result = new Job();
 
+		result.setHasChallenge(false);
 		principal = request.getPrincipal();
 		employerId = principal.getActiveRoleId();
 		employer = this.repository.findOneEmployerById(employerId);
@@ -84,7 +85,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		assert errors != null;
 
 		boolean hasTitle, hasSpamTitle, hasDescriptor, hasSpamDescriptor, hasReference, isDuplicated;
-		boolean hasSalary, isEuro, hasDeadline, isFuture;
+		boolean hasSalary, isEuro, hasDeadline, isFuture, hasTextChallenge, hasSpamTextChallenge, hasLinkInfo;
 
 		String descripcion = request.getModel().getString("description").trim();
 		Configuration configuration = this.repositoryConfiguration.findConfiguration();
@@ -155,6 +156,30 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 			}
 		}
 
+		// Validation textChallenge ------------------------------------------------------------------------------------------------------
+
+		if (!errors.hasErrors("textChallenge")) {
+			hasTextChallenge = entity.getTextChallenge() != null;
+			if (hasTextChallenge) {
+				hasSpamTextChallenge = Spamfilter.spamThreshold(entity.getTextChallenge(), spamWords, spamThreshold);
+				errors.state(request, !hasSpamTextChallenge, "textChallenge", "employer.job.error.must-not-have-spam-textChallenge");
+			}
+		}
+
+		// Validation linkInfo -----------------------------------------------------------------------------------------------------------
+
+		if (!errors.hasErrors("linkInfo")) {
+
+			hasLinkInfo = entity.getLinkInfo() != null && !entity.getLinkInfo().isEmpty();
+
+			if (!errors.hasErrors("textChallenge") && hasLinkInfo) {
+
+				hasTextChallenge = entity.getTextChallenge() != null && !entity.getTextChallenge().isEmpty();
+				errors.state(request, hasTextChallenge, "linkInfo", "employer.job.error.must-have-textChallenge");
+
+			}
+		}
+
 	}
 
 	@Override
@@ -162,9 +187,16 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		assert request != null;
 		assert entity != null;
 
+		boolean hasTextChallenge;
 		Descriptor descriptor;
 		String description;
 		Participatein participatein = new Participatein();
+
+		entity.setHasChallenge(false);
+		hasTextChallenge = entity.getTextChallenge() != null && !entity.getTextChallenge().isEmpty();
+		if (hasTextChallenge) {
+			entity.setHasChallenge(true);
+		}
 
 		entity.setHasApplication(false);
 		entity.setFinalMode(false);

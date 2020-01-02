@@ -608,6 +608,21 @@
 		<property name="employer" ref="employer1Employer"/>
 
 	</bean>
+	
+	<bean id="job6" class="acme.entities.jobs.Job">
+		<property name="reference" value="EMPA-JOBD"/>
+		<property name="title" value="Title 6"/>
+		<property name="deadline" value="2023/12/11 23:59"/>
+		<property name="salary" value="€ 100.00"/>
+		<property name="moreInfo" value="https://www.example.es/"/>
+		<property name="finalMode" value="true"/>
+		<property name="hasApplication" value ="true"/>
+		<property name="textChallenge" value ="This is a tex challenge"/>
+		<property name="linkInfo" value="https://projetsii.informatica.us.es"/>
+		<property name="hasChallenge" value ="true"/>
+		<property name="employer" ref="employer1Employer"/>
+
+	</bean>
 			<!-- Descriptors and duties -->
 			
 		<bean id="descriptor1" class="acme.entities.descriptor.Descriptor">
@@ -633,6 +648,11 @@
 		<bean id="descriptor5" class="acme.entities.descriptor.Descriptor">
 			<property name="description" value="Descriptor5 description"/>
 			<property name="job" ref="job5"/>
+		</bean>
+		
+		<bean id="descriptor6" class="acme.entities.descriptor.Descriptor">
+			<property name="description" value="Descriptor6 description"/>
+			<property name="job" ref="job6"/>
 		</bean>
 		
 		<bean id="duty1" class="acme.entities.duties.Duty">
@@ -672,6 +692,22 @@
 			<property name="description" value="Duty description"/>
 			<property name="percentage" value="100.0"/>
 			<property name="descriptor" ref="descriptor5"/>
+			
+		</bean>
+		
+		<bean id="duty6" class="acme.entities.duties.Duty">
+			<property name="title" value="Duty 6"/>
+			<property name="description" value="Duty description"/>
+			<property name="percentage" value="75.0"/>
+			<property name="descriptor" ref="descriptor6"/>
+			
+		</bean>
+		
+		<bean id="duty7" class="acme.entities.duties.Duty">
+			<property name="title" value="Duty 7"/>
+			<property name="description" value="Duty description"/>
+			<property name="percentage" value="25.0"/>
+			<property name="descriptor" ref="descriptor6"/>
 			
 		</bean>
 		

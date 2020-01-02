@@ -14,6 +14,8 @@
 	
 	
 	
+	
+	
 	<acme:form-textbox code="employer.job.form.label.reference" path="reference" readonly="${read}"/>
 	<acme:form-textbox code="employer.job.form.label.title" path="title"/>
 	
@@ -24,6 +26,21 @@
 	<acme:form-moment code="employer.job.form.label.deadline" path="deadline"/>
 	<acme:form-money code="employer.job.form.label.salary" path="salary"/>
 	<acme:form-textbox code="employer.job.form.label.moreInfo" path="moreInfo"/>
+	
+	<jstl:if test="${command == 'create'}">
+	<h4><acme:message code="employer.job.form.message.challenge"/></h4>
+	</jstl:if>
+	
+	
+	<jstl:if test="${command != 'create' && hasChallenge == true}">
+	<h4><acme:message code="employer.job.form.message.yourchallenge"/></h4>
+	</jstl:if>
+	
+	<jstl:if test="${command != 'create' && hasChallenge == false}">
+	<h4><acme:message code="employer.job.form.message.challenge"/></h4>
+	</jstl:if>
+	<acme:form-textbox code="employer.job.form.label.textChallenge" path="textChallenge"/>
+	<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="linkInfo"/>
 	
 	<jstl:if test="${finalMode == false && command != 'create'}">
 	<acme:form-select code="employer.job.form.label.finalMode" path="finalMode">
@@ -48,7 +65,12 @@
 	<jstl:set var="idJob" value="${id}"/>
 	<jstl:set var="jobId" value="${id}"/>
 	<jstl:if test="${command != 'create'}">
+	<jstl:if test="${command == 'update'}">
+	<h4><acme:menu-suboption code="employer.job.form.label.duties" action="/employer/descriptor/show?jobId=${jobId}&fm=false"/></h4>
+	</jstl:if>
+	<jstl:if test="${command != 'update'}">
 	<h4><acme:menu-suboption code="employer.job.form.label.duties" action="/employer/descriptor/show?jobId=${jobId}&fm=${fm}"/></h4>
+	</jstl:if>
 	<jstl:if test="${finalMode == true && command == 'show'}">
   	<h4><acme:menu-suboption code="employer.job.form.label.auditRecords" action="/employer/auditrecord/list_mine?id=${idJob}"/></h4>
   	</jstl:if>

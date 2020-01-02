@@ -13,6 +13,13 @@ worker.application.form.label.moment = Moment:
 worker.application.form.label.reference = Reference:
 worker.application.form.label.statement = Statement:
 worker.application.form.label.justification = Justification: 
+worker.application.form.message.answer = If you want you can add a answer to the XXXX of the job
+worker.application.form.label.answer = Answer to the XXXX of the Job
+worker.application.form.label.optionalApplication = Optionalapplication:
+worker.application.form.message.password = If you want you can protect with a password your optionalApplication
+worker.application.form.label.password = Password:
+worker.application.form.message.answer.created = This is the information of your XXXX:
+worker.application.form.label.password.created = You have protected your Optionalapplication with this password:
 
 worker.application.form.label.button.return = Return
 worker.application.form.label.button.create = Create
@@ -24,3 +31,11 @@ worker.application.error.must-have-skills = Skills must not be null
 worker.application.error.must-have-qualifications = Qualifications must not be null
 worker.application.error.must-have-statement = Statement must not be null
 worker.application.error.pattern-status= It must be pending, accepted or rejected
+worker.application.error.must-not-have-spam-skills = The skills must not have spam
+worker.application.error.must-not-have-spam-statement = The statement must not contains spam
+worker.application.error.must-not-have-spam-qualifications = The qualifications must not contains spam
+worker.application.error.must-not-have-spam-answer = The answer must not contains spam
+worker.application.error.must-have-answer = If you want to add an OptionalApplication to your application, you need an answer before
+worker.application.error.must-not-have-spam-optionalApplication = The optionalApplication must not have spam
+worker.application.error.must-have-optional = If you want to protect with a password, you have to add an optionalApplication before
+
