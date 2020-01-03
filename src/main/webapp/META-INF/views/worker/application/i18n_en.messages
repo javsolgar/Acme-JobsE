@@ -16,6 +16,7 @@ worker.application.form.label.justification = Justification:
 worker.application.form.message.answer = If you want you can add a answer to the XXXX of the job
 worker.application.form.label.answer = Answer to the XXXX of the Job
 worker.application.form.label.optionalApplication = Optionalapplication:
+worker.application.message.status = Status of application:
 worker.application.form.message.password = If you want you can protect with a password your optionalApplication
 worker.application.form.label.password = Password:
 worker.application.form.message.answer.created = This is the information of your XXXX:

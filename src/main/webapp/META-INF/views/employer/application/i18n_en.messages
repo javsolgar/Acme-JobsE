@@ -13,8 +13,11 @@ employer.application.form.label.status.rejected = rejected
 employer.application.form.label.skills = Skills:
 employer.application.form.label.qualifications = Qualifications:
 employer.application.form.message.answer = Answer of the XXXX of the job:
-employer.application.form.label.answer = answer
+employer.application.form.message.password = This application contains a hidden answer to the XXXX of your job
+employer.application.form.label.answer = answer:
+employer.application.form.message.status = Status of application:
 employer.application.form.label.optionalApplication = OptionalApplication:
+employer.application.form.label.answerEmployer = Introduce the password to see the answer:
 employer.application.form.label.moment = Moment:
 employer.application.form.label.reference = Reference:
 employer.application.form.label.justification = Justification:
@@ -29,5 +32,7 @@ employer.application.error.pattern-status=It must be pending, accepted or reject
 
 employer.request.error.must-justificated = The rejected application must have a mandatory justification
 worker.application.error.had-applicated = You have already applicated to this job
+employer.application.error.must-not-have-spam-justification = The justification must not have spam
+employer.application.errors.incorrectPasword = The password is not correct
 
 

@@ -25,12 +25,7 @@
 	</jstl:if>
 	</jstl:if>
 	
-	<jstl:if test="${command == 'show' }">
-	<acme:form-textbox code="worker.application.form.label.status" path="status" readonly="true"/>
-	</jstl:if>
-	<jstl:if test="${status != 'pending' && command != 'create'}">
-		<acme:form-textbox code="worker.application.form.label.justification" path="justification"/>
-	</jstl:if>
+	
 	
 	<jstl:if test="${hasXXXX == true}">
 	<h4><acme:message code="worker.application.form.message.answer.created"/></h4>
@@ -39,6 +34,15 @@
 	<jstl:if test="${hasPassword == true}">
 	<acme:form-textbox code="worker.application.form.label.password.created" path="password"/>
 	</jstl:if>
+	</jstl:if>
+	
+	
+	<jstl:if test="${command == 'show' }">
+	<h4><acme:message code="worker.application.message.status"/></h4>
+	<acme:form-textbox code="worker.application.form.label.status" path="status" readonly="true"/>
+	</jstl:if>
+	<jstl:if test="${status != 'pending' && command != 'create'}">
+		<acme:form-textbox code="worker.application.form.label.justification" path="justification"/>
 	</jstl:if>
 	
 

@@ -197,7 +197,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 
 					if (hasAnswer) {
 
-						hasSpamOptionalApplication = Spamfilter.spamThreshold(entity.getAnswer(), spamWords, spamThreshold);
+						hasSpamOptionalApplication = Spamfilter.spamThreshold(entity.getOptionalApplication(), spamWords, spamThreshold);
 						errors.state(request, !hasSpamOptionalApplication, "optionalApplication", "worker.application.error.must-not-have-spam-optionalApplication");
 					}
 

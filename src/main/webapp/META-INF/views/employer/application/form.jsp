@@ -12,16 +12,38 @@
 	<acme:form-textarea code="employer.application.form.label.statement" path="statement" readonly="true"/>
 	
 	
-	<jstl:if test="${hasXXX == true && hasPassword == false}">
+	<acme:form-hidden path="hasXXXX"/>
+	<acme:form-hidden path="hasPassword"/>
+	
+	<jstl:if test="${hasXXXX == true && hasPassword == false && command == 'show'}">
 	<h4><acme:message code="employer.application.form.message.answer"/></h4>
-	<acme:form-textbox code="employer.application.form.label.answer" path="answer"/>
-	<acme:form-textbox code="employer.application.form.label.optionalApplication" path="optionalApplication"/>
+	<acme:form-textbox code="employer.application.form.label.answer" path="answer" readonly="true"/>
+	<acme:form-textbox code="employer.application.form.label.optionalApplication" path="optionalApplication" readonly="true"/>
 	</jstl:if>
 	
-	<jstl:if test="${hasXXX == true && hasPassword == true}">
+	<jstl:if test="${status == 'pending'}">
+	<jstl:if test="${hasXXXX == true && hasPassword == true && command == 'show'}">
 	<h4><acme:message code="employer.application.form.message.password"/></h4>
+	<acme:form-textbox code="employer.application.form.label.answerEmployer" path="passwordEmployer"/>
+	</jstl:if>
+	</jstl:if>
+	
+	<jstl:if test="${hasXXXX == true && hasPassword == false && command == 'update'}">
+	<h4><acme:message code="employer.application.form.message.answer"/></h4>
+	<acme:form-textbox code="employer.application.form.label.answer" path="answer" readonly="true"/>
+	<acme:form-textbox code="employer.application.form.label.optionalApplication" path="optionalApplication" readonly="true"/>
 	</jstl:if>
 
+	
+	<jstl:if test="${hasXXXX == true && hasPassword == true && command == 'update'}">
+	<h4><acme:message code="employer.application.form.message.password"/></h4>
+	<acme:form-textbox code="employer.application.form.label.answerEmployer" path="passwordEmployer"/>
+	</jstl:if>
+	
+	
+	<jstl:if test="${status != 'pending' && command != 'update'}">
+	<h4><acme:message code="employer.application.form.message.status"/></h4>
+	</jstl:if>
 	
 	<jstl:if test="${status == 'pending' && command == 'show'}">
 	<h3><acme:message code="employer.application.form.label.message"/></h3>

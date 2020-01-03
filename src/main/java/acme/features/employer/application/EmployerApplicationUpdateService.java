@@ -5,7 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.application.Application;
+import acme.entities.configuration.Configuration;
 import acme.entities.roles.Employer;
+import acme.features.utiles.ConfigurationRepository;
+import acme.features.utiles.Spamfilter;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -16,7 +19,10 @@ import acme.framework.services.AbstractUpdateService;
 public class EmployerApplicationUpdateService implements AbstractUpdateService<Employer, Application> {
 
 	@Autowired
-	private EmployerApplicationRepository repository;
+	private EmployerApplicationRepository	repository;
+
+	@Autowired
+	private ConfigurationRepository			confRepository;
 
 
 	@Override
@@ -42,7 +48,7 @@ public class EmployerApplicationUpdateService implements AbstractUpdateService<E
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		request.bind(entity, errors, "reference", "moment", "skills", "statement", "qualifications", "worker", "job", "answer", "optionalApplication", "password", "hasXXXX", "hasPassword");
+		request.bind(entity, errors, "reference", "moment", "skills", "statement", "qualifications", "worker", "job", "answer", "optionalApplication", "answerEmployer", "hasXXXX", "hasPassword");
 	}
 
 	@Override
@@ -71,16 +77,48 @@ public class EmployerApplicationUpdateService implements AbstractUpdateService<E
 		assert entity != null;
 		assert errors != null;
 
-		boolean isJustificated;
+		Configuration configuration;
+		String spamWords;
+		Double spamThreshold;
+
+		//password = request.getModel().getString("answerEmployer");
+
+		boolean isJustificated, hasSpamJustification, correctPassword, hasPassword, passwordNotNull;
 		if (!errors.hasErrors("status")) {
 			if (request.getModel().getString("status").equals("rejected")) {
 				isJustificated = !request.getModel().getString("justification").trim().equals("");
 				errors.state(request, isJustificated, "status", "employer.request.error.must-justificated");
+
 			}
+
+		}
+
+		if (!errors.hasErrors("justification")) {
+			isJustificated = !request.getModel().getString("justification").trim().equals("");
+
+			if (isJustificated) {
+
+				configuration = this.confRepository.findConfiguration();
+				spamWords = configuration.getSpamWords();
+				spamThreshold = configuration.getSpamThreshold();
+
+				hasSpamJustification = Spamfilter.spamThreshold(entity.getJustification(), spamWords, spamThreshold);
+				errors.state(request, !hasSpamJustification, "justification", "employer.application.error.must-not-have-spam-justification");
+			}
+
 		}
 
 		boolean ErrorPattern = entity.getStatus().matches("^(pending)|(accepted)|(rejected)$");
 		errors.state(request, ErrorPattern, "status", "employer.application.error.pattern-status");
+
+		passwordNotNull = request.getModel().hasAttribute("passwordEmployer");
+		if (passwordNotNull) {
+			hasPassword = request.getModel().getString("passwordEmployer").trim() != null && !request.getModel().getString("passwordEmployer").trim().isEmpty();
+			if (hasPassword) {
+				correctPassword = request.getModel().getString("passwordEmployer").trim().equals(entity.getPassword());
+				errors.state(request, correctPassword, "passwordEmployer", "employer.application.errors.incorrectPasword");
+			}
+		}
 
 	}
 
@@ -88,6 +126,19 @@ public class EmployerApplicationUpdateService implements AbstractUpdateService<E
 	public void update(final Request<Application> request, final Application entity) {
 		assert request != null;
 		assert entity != null;
+
+		boolean hasPassword, correctPassword, passwordNotNull;
+
+		passwordNotNull = request.getModel().hasAttribute("passwordEmployer");
+		if (passwordNotNull) {
+			hasPassword = request.getModel().getString("passwordEmployer").trim() != null && !request.getModel().getString("passwordEmployer").trim().isEmpty();
+			if (hasPassword) {
+				correctPassword = request.getModel().getString("passwordEmployer").trim().equals(entity.getPassword());
+				if (correctPassword) {
+					entity.setHasPassword(false);
+				}
+			}
+		}
 
 		this.repository.save(entity);
 	}
