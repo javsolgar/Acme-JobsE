@@ -63,11 +63,16 @@ public class Application extends DomainEntity {
 	private String				optionalApplication;
 
 	//@Length(max = 200)
+	//
 	private String				password;
 
 	private boolean				hasXXXX;
 
 	private boolean				hasPassword;
+
+	private boolean				hasBeenProtected;
+
+	//private boolean				includeXXXXinXXXX;
 
 
 	//Derivated atributes --------------------------------------------------------------------

@@ -234,15 +234,26 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 
 		entity.setHasXXXX(false);
 		entity.setHasPassword(false);
+		//entity.setIncludeXXXXinXXXX(false);
+		entity.setHasBeenProtected(false);
 
+		// Si incluye contresale las aplicaciones -----------------------------------------------------------------------------
 		hasPassword = entity.getPassword() != null && !entity.getPassword().isEmpty();
 		hasXXXX = entity.getAnswer() != null && !entity.getAnswer().isEmpty();
 		if (hasPassword) {
 			entity.setHasPassword(true);
+			entity.setHasBeenProtected(true);
 		}
 
+		// Si incluye XXXX las aplicaciones -----------------------------------------------------------------------------
 		if (hasXXXX) {
 			entity.setHasXXXX(true);
+			/*
+			 * hasoptionalApplication = entity.getOptionalApplication() != null && !entity.getOptionalApplication().isEmpty();
+			 * if (hasoptionalApplication) {
+			 * entity.setIncludeXXXXinXXXX(true);
+			 * }
+			 */
 		}
 
 		Date moment = new Date(System.currentTimeMillis() - 1);
