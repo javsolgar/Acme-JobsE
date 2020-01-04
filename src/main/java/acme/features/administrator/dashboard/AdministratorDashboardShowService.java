@@ -374,21 +374,19 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 	}
 
 	public Double getRatioJobsThatHaveChallengeProperty() {
-		Double allJobs, jobsWithChallenge;
-
-		allJobs = this.repository.numberOfJobs();
-		jobsWithChallenge = this.repository.numberOfJobsWithChallenge();
-
-		return jobsWithChallenge / allJobs;
+		Double ratio = this.repository.ratioJobsWithChallenge();
+		if (ratio == null) {
+			return 0.;
+		}
+		return ratio;
 	}
 
 	public Double getRatioApplicationPasswordProtected() {
-		Double allApplication, passwordProtectedApplications;
-
-		allApplication = this.repository.numberOfApplications();
-		passwordProtectedApplications = this.repository.numberOfApplicationsProtected();
-
-		return passwordProtectedApplications / allApplication;
+		Double ratio = this.repository.rationProtectedApplications();
+		if (ratio == null) {
+			return 0.;
+		}
+		return ratio;
 
 	}
 }

@@ -17,8 +17,8 @@ worker.application.form.message.answer = If you want you can add a answer to the
 worker.application.form.label.answer = Answer to the XXXX of the Job
 worker.application.form.label.optionalApplication = Optionalapplication:
 worker.application.message.status = Status of application:
-worker.application.form.message.password = If you want you can protect with a password your optionalApplication
-worker.application.form.label.password = Password:
+worker.application.form.message.password = If you want you can protect with a password your answer
+worker.application.form.label.password = Password: (Password must contains X letters, X digits, X punctuation symbols and have at least X characters)
 worker.application.form.message.answer.created = This is the information of your XXXX:
 worker.application.form.label.password.created = You have protected your Optionalapplication with this password:
 
@@ -38,5 +38,5 @@ worker.application.error.must-not-have-spam-qualifications = The qualifications 
 worker.application.error.must-not-have-spam-answer = The answer must not contains spam
 worker.application.error.must-have-answer = If you want to add an OptionalApplication to your application, you need an answer before
 worker.application.error.must-not-have-spam-optionalApplication = The optionalApplication must not have spam
-worker.application.error.must-have-optional = If you want to protect with a password, you have to add an optionalApplication before
+worker.application.error.must-have-optional = If you want to protect with a password, you have to add an answer before
 

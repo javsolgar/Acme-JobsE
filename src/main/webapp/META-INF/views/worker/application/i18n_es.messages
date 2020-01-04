@@ -17,8 +17,8 @@ worker.application.form.message.answer = Sí quieres puedes añadir una respuest
 worker.application.form.label.answer = Respuesta al XXXX del trabajo
 worker.application.form.label.optionalApplication = Optionalapplication:
 worker.application.message.status = Estado de la solicitud
-worker.application.form.message.password = Sí quieres puedes proteger con contraseña tu OptionalApplication
-worker.application.form.label.password = Contraseña:
+worker.application.form.message.password = Sí quieres puedes proteger con contraseña tu respuesta
+worker.application.form.label.password = Contraseña: (La contraseña debe contener X letras, X dígitos, X simbolos de puntuación y tener al menos X caracteres)
 worker.application.form.label.button.return = Volver
 worker.application.form.label.button.create = Crear
 
@@ -35,4 +35,4 @@ worker.application.error.must-not-have-spam-qualifications = Las cualificaciones
 worker.application.error.must-not-have-spam-answer = La respuesta no puede contener spam
 worker.application.error.must-have-answer = Sí quieres añadir un Optionalapplication tienes que añadir una respuesta antes
 worker.application.error.must-not-have-spam-optionalApplication = La OptionalApplication no puede contener spam
-worker.application.error.must-have-optional = Si quieres proteger con contraseña, debes de añadir un Optionalapplication antes
+worker.application.error.must-have-optional = Si quieres proteger con contraseña, debes de añadir una respuesta antes

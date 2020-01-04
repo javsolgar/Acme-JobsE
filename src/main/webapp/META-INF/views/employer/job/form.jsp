@@ -26,40 +26,48 @@
 		<h4>
 			<acme:message code="employer.job.form.message.challenge" />
 		</h4>
+		<acme:form-textbox code="employer.job.form.label.textChallenge" path="textChallenge" />
+		<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="linkInfo" />
 	</jstl:if>
-<!-- ---------------------------------------------------------------------------------- -->
-	<jstl:if test="${command != 'create'}">
+	<!-- ---------------------------------------------------------------------------------- -->
+	<jstl:if test="${command == 'show'}">
 		<jstl:if test="${hasChallenge == true}">
 			<h4>
 				<acme:message code="employer.job.form.message.yourchallenge" />
 			</h4>
+			<acme:form-textbox code="employer.job.form.label.textChallenge" path="textChallenge" />
+			<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="linkInfo" />
 		</jstl:if>
 
 		<jstl:if test="${hasChallenge == false && finalMode == false}">
 			<h4>
 				<acme:message code="employer.job.form.message.challenge" />
 			</h4>
-		</jstl:if>
-
-		<jstl:if test="${hasChallenge == false && finalMode == false}">
 			<acme:form-textbox code="employer.job.form.label.textChallenge" path="textChallenge" />
 			<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="linkInfo" />
 		</jstl:if>
 	</jstl:if>
-	
-	<jstl:if test="${hasChallenge == true}">
+
+
+	<!-- dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+	<jstl:if test="${command == 'update'}">
+			<h4>
+				<acme:message code="employer.job.form.message.yourchallenge" />
+			</h4>
 			<acme:form-textbox code="employer.job.form.label.textChallenge" path="textChallenge" />
 			<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="linkInfo" />
-		</jstl:if>
-	
-<!-- ---------------------------------------------------------------------------------- -->
+	</jstl:if>
+
+
+
+	<!-- ---------------------------------------------------------------------------------- -->
 	<jstl:if test="${finalMode == false && command != 'create'}">
 		<acme:form-select code="employer.job.form.label.finalMode" path="finalMode">
 			<acme:form-option code="employer.job.form.label.finalMode.false" value="false" />
 			<acme:form-option code="employer.job.form.label.finalMode.true" value="true" />
 		</acme:form-select>
 	</jstl:if>
-<!-- ---------------------------------------------------------------------------------- -->
+
 	<jstl:if test="${finalMode == true && command == 'update'}">
 		<acme:form-select code="employer.job.form.label.finalMode" path="finalMode">
 			<acme:form-option code="employer.job.form.label.finalMode.true" value="true" />

@@ -27,6 +27,7 @@
        `id` integer not null,
         `version` integer not null,
         `answer` varchar(1024),
+        `has_been_protected` bit not null,
         `has_password` bit not null,
         `hasxxxx` bit not null,
         `justification` varchar(255),

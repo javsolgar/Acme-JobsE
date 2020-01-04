@@ -62,8 +62,7 @@ public class Application extends DomainEntity {
 
 	private String				optionalApplication;
 
-	//@Length(max = 200)
-	//
+	@Pattern(regexp = "^((?=(?:.*\\p{L}){4})(?=(?:.*\\p{N}){2,})(?=(?:.*\\p{P}){2,}).{8,})?$", message = "Error")
 	private String				password;
 
 	private boolean				hasXXXX;

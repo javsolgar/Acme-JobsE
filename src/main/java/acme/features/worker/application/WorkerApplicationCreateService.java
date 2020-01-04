@@ -212,8 +212,8 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 				hasPassword = entity.getPassword() != null && !entity.getPassword().isEmpty();
 
 				if (hasPassword) {
-					hasOptionalApplication = entity.getOptionalApplication() != null && !entity.getOptionalApplication().isEmpty();
-					errors.state(request, hasOptionalApplication, "password", "worker.application.error.must-have-optional");
+					hasAnswer = entity.getAnswer() != null && !entity.getAnswer().isEmpty();
+					errors.state(request, hasAnswer, "password", "worker.application.error.must-have-optional");
 				}
 
 			}
