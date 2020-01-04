@@ -20,7 +20,7 @@ worker.application.message.status = Status of application:
 worker.application.form.message.password = If you want you can protect with a password your answer
 worker.application.form.label.password = Password: (Password must contains X letters, X digits, X punctuation symbols and have at least X characters)
 worker.application.form.message.answer.created = This is the information of your XXXX:
-worker.application.form.label.password.created = You have protected your Optionalapplication with this password:
+worker.application.form.label.password.created = You have protected your answer with this password:
 
 worker.application.form.label.button.return = Return
 worker.application.form.label.button.create = Create

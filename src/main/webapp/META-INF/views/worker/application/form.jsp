@@ -31,7 +31,7 @@
 	<h4><acme:message code="worker.application.form.message.answer.created"/></h4>
 	<acme:form-textbox code="worker.application.form.label.answer" path="answer"/>
 	<acme:form-textbox code="worker.application.form.label.optionalApplication" path="optionalApplication"/>
-	<jstl:if test="${hasPassword == true}">
+	<jstl:if test="${hasBeenProtected == true}">
 	<acme:form-textbox code="worker.application.form.label.password.created" path="password"/>
 	</jstl:if>
 	</jstl:if>

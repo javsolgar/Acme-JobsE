@@ -19,6 +19,7 @@ worker.application.form.label.optionalApplication = Optionalapplication:
 worker.application.message.status = Estado de la solicitud
 worker.application.form.message.password = Sí quieres puedes proteger con contraseña tu respuesta
 worker.application.form.label.password = Contraseña: (La contraseña debe contener X letras, X dígitos, X simbolos de puntuación y tener al menos X caracteres)
+worker.application.form.label.password.created = Has protegido tu respuesta con esta contraseña:
 worker.application.form.label.button.return = Volver
 worker.application.form.label.button.create = Crear
 
