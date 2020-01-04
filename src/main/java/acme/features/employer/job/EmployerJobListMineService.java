@@ -17,7 +17,7 @@ import acme.framework.services.AbstractListService;
 public class EmployerJobListMineService implements AbstractListService<Employer, Job> {
 
 	@Autowired
-	EmployerJobRepository repository;
+	private EmployerJobRepository repository;
 
 
 	@Override

@@ -74,7 +74,7 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "finalMode");
+		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "finalMode", "textChallenge", "linkInfo", "hasChallenge");
 
 	}
 
@@ -97,7 +97,7 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 		assert errors != null;
 
 		boolean hasTitle, hasSpamTitle;
-		boolean hasSalary, isEuro, hasDeadline, isFuture, is100;
+		boolean hasSalary, isEuro, hasDeadline, isFuture, is100, hasTextChallenge, hasSpamTextChallenge, hasLinkInfo;
 
 		Configuration configuration = this.confRepository.findConfiguration();
 		String spamWords = configuration.getSpamWords();
@@ -161,12 +161,46 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 			}
 		}
 
+		// Validation textChallenge ------------------------------------------------------------------------------------------------------
+
+		if (!errors.hasErrors("textChallenge"))
+
+		{
+			hasTextChallenge = entity.getTextChallenge() != null;
+			if (hasTextChallenge) {
+				hasSpamTextChallenge = Spamfilter.spamThreshold(entity.getTextChallenge(), spamWords, spamThreshold);
+				errors.state(request, !hasSpamTextChallenge, "textChallenge", "employer.job.error.must-not-have-spam-textChallenge");
+			}
+		}
+
+		// Validation linkInfo -----------------------------------------------------------------------------------------------------------
+
+		if (!errors.hasErrors("linkInfo")) {
+
+			hasLinkInfo = entity.getLinkInfo() != null && !entity.getLinkInfo().isEmpty();
+
+			if (!errors.hasErrors("textChallenge") && hasLinkInfo) {
+
+				hasTextChallenge = entity.getTextChallenge() != null && !entity.getTextChallenge().isEmpty();
+				errors.state(request, hasTextChallenge, "linkInfo", "employer.job.error.must-have-textChallenge");
+
+			}
+		}
+
 	}
 
 	@Override
 	public void update(final Request<Job> request, final Job entity) {
 		assert request != null;
 		assert entity != null;
+
+		boolean hasTextChallenge;
+
+		entity.setHasChallenge(false);
+		hasTextChallenge = entity.getTextChallenge() != null && !entity.getTextChallenge().isEmpty();
+		if (hasTextChallenge) {
+			entity.setHasChallenge(true);
+		}
 
 		this.repository.save(entity);
 

@@ -53,7 +53,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		request.unbind(entity, model, "totalAnnouncement", "totalInvestorsRecord", "totalCompanyRecords", "minRewardRequest", "maxRewardRequest", "minRewardOffers", "maxRewardOffers", "companysBySector", "sectorsOfCompanys", "inverstorsBySector",
 			"sectorsOfInverstors", "mediaRequest", "mediaOffer", "stdevRequest", "stdevOffer", "jobsByFinalMode", "statusOfApplication", "applicationByStatus", "avgApplicationEmployer", "avgJobEmployer", "avgApplicationWorker", "diasPending",
-			"applicationPendingPerDay", "applicationAcceptedPerDay", "applicationRejectedPerDay");
+			"applicationPendingPerDay", "applicationAcceptedPerDay", "applicationRejectedPerDay", "ratioJobsThatHaveChallengeProperty", "ratioApplicationPasswordProtected");
 
 	}
 
@@ -85,6 +85,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setApplicationPendingPerDay(this.getApplicationPendingPerDay(this.getPendingPerDay()));
 		result.setApplicationAcceptedPerDay(this.getApplicationAcceptedPerDay(this.getAcceptedPerDay()));
 		result.setApplicationRejectedPerDay(this.getApplicationRejectedPerDay(this.getRejectedPerDay()));
+		result.setRatioJobsThatHaveChallengeProperty(this.getRatioJobsThatHaveChallengeProperty());
+		result.setRatioApplicationPasswordProtected(this.getRatioApplicationPasswordProtected());
 
 		return result;
 	}
@@ -371,4 +373,20 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 	}
 
+	public Double getRatioJobsThatHaveChallengeProperty() {
+		Double ratio = this.repository.ratioJobsWithChallenge();
+		if (ratio == null) {
+			return 0.;
+		}
+		return ratio;
+	}
+
+	public Double getRatioApplicationPasswordProtected() {
+		Double ratio = this.repository.rationProtectedApplications();
+		if (ratio == null) {
+			return 0.;
+		}
+		return ratio;
+
+	}
 }

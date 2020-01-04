@@ -11,6 +11,40 @@
 	<acme:form-textbox code="employer.application.form.label.reference" path="reference" readonly="true"/>
 	<acme:form-textarea code="employer.application.form.label.statement" path="statement" readonly="true"/>
 	
+	
+	<acme:form-hidden path="hasXXXX"/>
+	<acme:form-hidden path="hasPassword"/>
+	
+	<jstl:if test="${hasXXXX == true && hasPassword == false && command == 'show'}">
+	<h4><acme:message code="employer.application.form.message.answer"/></h4>
+	<acme:form-textbox code="employer.application.form.label.answer" path="answer" readonly="true"/>
+	<acme:form-textbox code="employer.application.form.label.optionalApplication" path="optionalApplication" readonly="true"/>
+	</jstl:if>
+	
+	<jstl:if test="${status == 'pending'}">
+	<jstl:if test="${hasXXXX == true && hasPassword == true && command == 'show'}">
+	<h4><acme:message code="employer.application.form.message.password"/></h4>
+	<acme:form-textbox code="employer.application.form.label.answerEmployer" path="passwordEmployer"/>
+	</jstl:if>
+	</jstl:if>
+	
+	<jstl:if test="${hasXXXX == true && hasPassword == false && command == 'update'}">
+	<h4><acme:message code="employer.application.form.message.answer"/></h4>
+	<acme:form-textbox code="employer.application.form.label.answer" path="answer" readonly="true"/>
+	<acme:form-textbox code="employer.application.form.label.optionalApplication" path="optionalApplication" readonly="true"/>
+	</jstl:if>
+
+	
+	<jstl:if test="${hasXXXX == true && hasPassword == true && command == 'update'}">
+	<h4><acme:message code="employer.application.form.message.password"/></h4>
+	<acme:form-textbox code="employer.application.form.label.answerEmployer" path="passwordEmployer"/>
+	</jstl:if>
+	
+	
+	<jstl:if test="${status != 'pending' && command != 'update'}">
+	<h4><acme:message code="employer.application.form.message.status"/></h4>
+	</jstl:if>
+	
 	<jstl:if test="${status == 'pending' && command == 'show'}">
 	<h3><acme:message code="employer.application.form.label.message"/></h3>
 	<acme:form-select code="employer.application.form.label.status" path="status">

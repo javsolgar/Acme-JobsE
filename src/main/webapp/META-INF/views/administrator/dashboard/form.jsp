@@ -4,6 +4,8 @@
 <acme:form readonly="true">
 
 <acme:form readonly="true">
+	<acme:form-double code="administrator.dashboard.form.label.ratioJobsThatHaveChallengeProperty" path="ratioJobsThatHaveChallengeProperty" />
+	<acme:form-double code="administrator.dashboard.form.label.ratioApplicationPasswordProtected" path="ratioApplicationPasswordProtected" />	
 	<acme:form-integer code="administrator.dashboard.form.label.totalAnnouncement" path="totalAnnouncement" />
 	<acme:form-integer code="administrator.dashboard.form.label.totalInvestorsRecord" path="totalInvestorsRecord" />	
 	<acme:form-integer code="administrator.dashboard.form.label.totalCompanyRecords" path="totalCompanyRecords" />

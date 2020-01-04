@@ -12,6 +12,7 @@ import acme.entities.configuration.Configuration;
 import acme.entities.descriptor.Descriptor;
 import acme.entities.duties.Duty;
 import acme.entities.jobs.Job;
+import acme.entities.participatein.Participatein;
 import acme.entities.roles.Employer;
 import acme.framework.repositories.AbstractRepository;
 
@@ -44,5 +45,8 @@ public interface EmployerJobRepository extends AbstractRepository {
 
 	@Query("select a from Configuration a where a.id=6")
 	Configuration findConfiguration();
+
+	@Query("select p from Participatein p where p.job.id = ?1")
+	Collection<Participatein> findParticipates(int jobid);
 
 }

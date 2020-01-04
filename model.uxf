@@ -498,7 +498,7 @@ has v</panel_attributes>
       <x>98</x>
       <y>714</y>
       <w>245</w>
-      <h>308</h>
+      <h>329</h>
     </coordinates>
     <panel_attributes>Dashboard
 --
@@ -527,6 +527,8 @@ has v</panel_attributes>
 / applicationPendingPerDay: List&lt;Integer&gt;
 / applicationAcceptedPerDay: List&lt;Integer&gt;
 / applicationRejectedPerDay: List&lt;Integer&gt;
+/ ratioJobsThatHaveChallengeProperty: Double
+/ ratioApplicationPasswordProtected: Double
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -628,7 +630,7 @@ Sponsor
       <x>630</x>
       <y>616</y>
       <w>280</w>
-      <h>119</h>
+      <h>133</h>
     </coordinates>
     <panel_attributes>Job
 --
@@ -639,6 +641,9 @@ Sponsor
 +description: String {NotBlank}
 +moreInfo: String {URL}
 +finalMode: boolean
++textChallenge: String {lenght(max = 200)}
++linkInfo: String {URL}
++hasChallenge: boolean
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -744,15 +749,15 @@ Registered by &gt;</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>756</x>
-      <y>728</y>
+      <y>742</y>
       <w>70</w>
-      <h>70</h>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=-x
 m1=1
 m2=1
 Wrote by &gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -817,15 +822,15 @@ Registered by &gt;</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>644</x>
-      <y>728</y>
+      <y>742</y>
       <w>91</w>
-      <h>91</h>
+      <h>77</h>
     </coordinates>
     <panel_attributes>lt=-x
 m1=1
 m2=1..*
 Registered by &gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -880,10 +885,10 @@ Part of &gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>854</x>
-      <y>441</y>
-      <w>231</w>
-      <h>112</h>
+      <x>861</x>
+      <y>399</y>
+      <w>238</w>
+      <h>182</h>
     </coordinates>
     <panel_attributes>Application
 --
@@ -894,7 +899,13 @@ Part of &gt;</panel_attributes>
 +statement: String {NotBlank,Column}
 +qualifications: String {NotBlank,Column}
 +worker: Worker {NotNull,Valid,ManyToOne}
-+job: Job {NotNull,Valid,ManyToOne}</panel_attributes>
++job: Job {NotNull,Valid,ManyToOne}
++answer: String
++optionalApplication: String
++password: String
++hasXXXX: boolean
++hasPassword: boolean
++hasBeenProtected: boolean</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -902,28 +913,28 @@ Part of &gt;</panel_attributes>
     <coordinates>
       <x>931</x>
       <y>350</y>
-      <w>91</w>
-      <h>105</h>
+      <w>98</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=-x
 m1=1
 m2=0..*
 Registered by &gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+    <additional_attributes>10.0;10.0;20.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>868</x>
-      <y>546</y>
+      <y>574</y>
       <w>70</w>
-      <h>84</h>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=-x
 m1=1
 m2=1..*
 Made To &gt;</panel_attributes>
-    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;60.0;20.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -1016,23 +1027,23 @@ Registered by &gt;</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>756</x>
-      <y>728</y>
+      <y>742</y>
       <w>21</w>
-      <h>70</h>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>644</x>
-      <y>728</y>
+      <y>742</y>
       <w>21</w>
-      <h>98</h>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1049,23 +1060,23 @@ Registered by &gt;</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>868</x>
-      <y>546</y>
-      <w>21</w>
-      <h>84</h>
+      <y>574</y>
+      <w>28</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;60.0;20.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>931</x>
       <y>350</y>
-      <w>21</w>
-      <h>105</h>
+      <w>28</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+    <additional_attributes>10.0;10.0;20.0;70.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>

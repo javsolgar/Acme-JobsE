@@ -78,4 +78,10 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select a from Application a where a.status='rejected'")
 	List<Application> getRejectedApplications();
 
+	@Query("select cast(((select count(jc)/cast(count(j) as float) from Job jc where jc.hasChallenge=true)) as float) from Job j")
+	Double ratioJobsWithChallenge();
+
+	@Query("select cast(((select count(ap)/cast(count(a) as float) from Application ap where ap.hasBeenProtected=true)) as float) from Application a")
+	Double rationProtectedApplications();
+
 }

@@ -19,4 +19,6 @@ administrator.dashboard.form.label.mediaApplicationEmployer= Media de aplicacion
 administrator.dashboard.form.title.applicationPendingPerDay = Aplicaciones pendientes en las últimas 4 semanas:
 administrator.dashboard.form.title.applicationRejectedPerDay = Aplicaciones rechazadas en las últimas 4 semanas:
 administrator.dashboard.form.title.applicationAcceptedPerDay = Aplicaciones aceptadas en las últimas 4 semanas:
+administrator.dashboard.form.label.ratioJobsThatHaveChallengeProperty = Ratio de trabajos que tienen XXXX:
+administrator.dashboard.form.label.ratioApplicationPasswordProtected = Ratio de solicitudes que incluyen un  XXXX protegido con contraseña:
 administrator.configuration.form.label.button.return = Volver

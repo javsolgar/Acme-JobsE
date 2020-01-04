@@ -67,4 +67,10 @@ public class Dashboard implements Serializable {
 
 	private List<Integer>		applicationRejectedPerDay;
 
+	private Double				ratioJobsThatHaveChallengeProperty;
+
+	//private Double				ratioOfApplicationThatHave;
+
+	private Double				ratioApplicationPasswordProtected;
+
 }
