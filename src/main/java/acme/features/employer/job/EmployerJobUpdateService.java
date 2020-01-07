@@ -74,7 +74,7 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "finalMode", "textChallenge", "linkInfo", "hasChallenge");
+		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "finalMode", "textRolenta", "symbol", "hasRolenta", "hasSymbol");
 
 	}
 
@@ -97,7 +97,7 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 		assert errors != null;
 
 		boolean hasTitle, hasSpamTitle;
-		boolean hasSalary, isEuro, hasDeadline, isFuture, is100, hasTextChallenge, hasSpamTextChallenge, hasLinkInfo;
+		boolean hasSalary, isEuro, hasDeadline, isFuture, is100, hasTextRolenta, hasSpamTextRolenta, hasSymbol;
 
 		Configuration configuration = this.confRepository.findConfiguration();
 		String spamWords = configuration.getSpamWords();
@@ -163,26 +163,26 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 
 		// Validation textChallenge ------------------------------------------------------------------------------------------------------
 
-		if (!errors.hasErrors("textChallenge"))
+		if (!errors.hasErrors("textRolenta"))
 
 		{
-			hasTextChallenge = entity.getTextChallenge() != null;
-			if (hasTextChallenge) {
-				hasSpamTextChallenge = Spamfilter.spamThreshold(entity.getTextChallenge(), spamWords, spamThreshold);
-				errors.state(request, !hasSpamTextChallenge, "textChallenge", "employer.job.error.must-not-have-spam-textChallenge");
+			hasTextRolenta = entity.getTextRolenta() != null;
+			if (hasTextRolenta) {
+				hasSpamTextRolenta = Spamfilter.spamThreshold(entity.getTextRolenta(), spamWords, spamThreshold);
+				errors.state(request, !hasSpamTextRolenta, "textRolenta", "employer.job.error.must-not-have-spam-textChallenge");
 			}
 		}
 
 		// Validation linkInfo -----------------------------------------------------------------------------------------------------------
 
-		if (!errors.hasErrors("linkInfo")) {
+		if (!errors.hasErrors("symbol")) {
 
-			hasLinkInfo = entity.getLinkInfo() != null && !entity.getLinkInfo().isEmpty();
+			hasSymbol = entity.getSymbol() != null && !entity.getSymbol().isEmpty();
 
-			if (!errors.hasErrors("textChallenge") && hasLinkInfo) {
+			if (!errors.hasErrors("textRolenta") && hasSymbol) {
 
-				hasTextChallenge = entity.getTextChallenge() != null && !entity.getTextChallenge().isEmpty();
-				errors.state(request, hasTextChallenge, "linkInfo", "employer.job.error.must-have-textChallenge");
+				hasTextRolenta = entity.getTextRolenta() != null && !entity.getTextRolenta().isEmpty();
+				errors.state(request, hasTextRolenta, "symbol", "employer.job.error.must-have-textChallenge");
 
 			}
 		}
@@ -194,12 +194,18 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 		assert request != null;
 		assert entity != null;
 
-		boolean hasTextChallenge;
+		boolean hasTextRolenta, hasSymbol;
 
-		entity.setHasChallenge(false);
-		hasTextChallenge = entity.getTextChallenge() != null && !entity.getTextChallenge().isEmpty();
-		if (hasTextChallenge) {
-			entity.setHasChallenge(true);
+		entity.setHasRolenta(false);
+		hasTextRolenta = entity.getTextRolenta() != null && !entity.getTextRolenta().isEmpty();
+		if (hasTextRolenta) {
+			entity.setHasRolenta(true);
+		}
+
+		entity.setHasSymbol(false);
+		hasSymbol = entity.getSymbol() != null && !entity.getSymbol().isEmpty();
+		if (hasSymbol) {
+			entity.setHasSymbol(true);
 		}
 
 		this.repository.save(entity);

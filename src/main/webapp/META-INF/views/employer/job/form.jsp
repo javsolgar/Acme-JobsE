@@ -26,25 +26,25 @@
 		<h4>
 			<acme:message code="employer.job.form.message.challenge" />
 		</h4>
-		<acme:form-textbox code="employer.job.form.label.textChallenge" path="textChallenge" />
-		<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="linkInfo" />
+		<acme:form-textbox code="employer.job.form.label.textChallenge" path="textRolenta" />
+		<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="symbol" />
 	</jstl:if>
 	<!-- ---------------------------------------------------------------------------------- -->
 	<jstl:if test="${command == 'show'}">
-		<jstl:if test="${hasChallenge == true}">
+		<jstl:if test="${hasRolenta == true}">
 			<h4>
 				<acme:message code="employer.job.form.message.yourchallenge" />
 			</h4>
-			<acme:form-textbox code="employer.job.form.label.textChallenge" path="textChallenge" />
-			<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="linkInfo" />
+			<acme:form-textbox code="employer.job.form.label.textChallenge" path="textRolenta" />
+			<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="symbol" />
 		</jstl:if>
 
-		<jstl:if test="${hasChallenge == false && finalMode == false}">
+		<jstl:if test="${hasRolenta == false && finalMode == false}">
 			<h4>
 				<acme:message code="employer.job.form.message.challenge" />
 			</h4>
-			<acme:form-textbox code="employer.job.form.label.textChallenge" path="textChallenge" />
-			<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="linkInfo" />
+			<acme:form-textbox code="employer.job.form.label.textChallenge" path="textRolenta" />
+			<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="symbol" />
 		</jstl:if>
 	</jstl:if>
 
@@ -54,8 +54,8 @@
 			<h4>
 				<acme:message code="employer.job.form.message.yourchallenge" />
 			</h4>
-			<acme:form-textbox code="employer.job.form.label.textChallenge" path="textChallenge" />
-			<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="linkInfo" />
+			<acme:form-textbox code="employer.job.form.label.textChallenge" path="textRolenta" />
+			<acme:form-textbox code="employer.job.form.label.moreInfoChallenge" path="symbol" />
 	</jstl:if>
 
 

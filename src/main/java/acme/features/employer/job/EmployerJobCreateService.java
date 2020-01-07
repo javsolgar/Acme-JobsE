@@ -54,7 +54,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "textChallenge", "linkInfo");
+		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "textRolenta", "symbol");
 
 	}
 
@@ -68,7 +68,8 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 
 		Job result = new Job();
 
-		result.setHasChallenge(false);
+		result.setHasRolenta(false);
+		result.setHasSymbol(false);
 		principal = request.getPrincipal();
 		employerId = principal.getActiveRoleId();
 		employer = this.repository.findOneEmployerById(employerId);
@@ -85,7 +86,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		assert errors != null;
 
 		boolean hasTitle, hasSpamTitle, hasDescriptor, hasSpamDescriptor, hasReference, isDuplicated;
-		boolean hasSalary, isEuro, hasDeadline, isFuture, hasTextChallenge, hasSpamTextChallenge, hasLinkInfo;
+		boolean hasSalary, isEuro, hasDeadline, isFuture, hasTextRolenta, hasSpamTextRolenta, hasSymbol;
 
 		String descripcion = request.getModel().getString("description").trim();
 		Configuration configuration = this.repositoryConfiguration.findConfiguration();
@@ -158,24 +159,24 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 
 		// Validation textChallenge ------------------------------------------------------------------------------------------------------
 
-		if (!errors.hasErrors("textChallenge")) {
-			hasTextChallenge = entity.getTextChallenge() != null;
-			if (hasTextChallenge) {
-				hasSpamTextChallenge = Spamfilter.spamThreshold(entity.getTextChallenge(), spamWords, spamThreshold);
-				errors.state(request, !hasSpamTextChallenge, "textChallenge", "employer.job.error.must-not-have-spam-textChallenge");
+		if (!errors.hasErrors("textRolenta")) {
+			hasTextRolenta = entity.getTextRolenta() != null;
+			if (hasTextRolenta) {
+				hasSpamTextRolenta = Spamfilter.spamThreshold(entity.getTextRolenta(), spamWords, spamThreshold);
+				errors.state(request, !hasSpamTextRolenta, "textRolenta", "employer.job.error.must-not-have-spam-textChallenge");
 			}
 		}
 
 		// Validation linkInfo -----------------------------------------------------------------------------------------------------------
 
-		if (!errors.hasErrors("linkInfo")) {
+		if (!errors.hasErrors("symbol")) {
 
-			hasLinkInfo = entity.getLinkInfo() != null && !entity.getLinkInfo().isEmpty();
+			hasSymbol = entity.getSymbol() != null && !entity.getSymbol().isEmpty();
 
-			if (!errors.hasErrors("textChallenge") && hasLinkInfo) {
+			if (!errors.hasErrors("textRolenta") && hasSymbol) {
 
-				hasTextChallenge = entity.getTextChallenge() != null && !entity.getTextChallenge().isEmpty();
-				errors.state(request, hasTextChallenge, "linkInfo", "employer.job.error.must-have-textChallenge");
+				hasTextRolenta = entity.getTextRolenta() != null && !entity.getTextRolenta().isEmpty();
+				errors.state(request, hasTextRolenta, "symbol", "employer.job.error.must-have-textChallenge");
 
 			}
 		}
@@ -187,15 +188,20 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		assert request != null;
 		assert entity != null;
 
-		boolean hasTextChallenge;
+		boolean hasTextChallenge, hasSymbol;
 		Descriptor descriptor;
 		String description;
 		Participatein participatein = new Participatein();
 
-		entity.setHasChallenge(false);
-		hasTextChallenge = entity.getTextChallenge() != null && !entity.getTextChallenge().isEmpty();
+		entity.setHasRolenta(false);
+		hasTextChallenge = entity.getTextRolenta() != null && !entity.getTextRolenta().isEmpty();
 		if (hasTextChallenge) {
-			entity.setHasChallenge(true);
+			entity.setHasRolenta(true);
+		}
+		entity.setHasSymbol(false);
+		hasSymbol = entity.getSymbol() != null && !entity.getSymbol().isEmpty();
+		if (hasSymbol) {
+			entity.setHasSymbol(true);
 		}
 
 		entity.setHasApplication(false);

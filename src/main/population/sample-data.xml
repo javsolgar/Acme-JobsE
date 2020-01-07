@@ -556,9 +556,10 @@
 		<property name="moreInfo" value="https://www.example.es/"/>
 		<property name="finalMode" value="true"/>
 		<property name="hasApplication" value ="true"/>
-		<property name="textChallenge"><null/></property>
-		<property name="linkInfo"><null/></property>
-		<property name="hasChallenge" value ="false"/>
+		<property name="textRolenta"><null/></property>
+		<property name="symbol"><null/></property>
+		<property name="hasRolenta" value ="false"/>
+		<property name="hasSymbol" value ="false"/>
 		<property name="employer" ref="employer1Employer"/>
 		
 
@@ -572,9 +573,10 @@
 		<property name="moreInfo" value="https://www.example.es/"/>
 		<property name="finalMode" value="true"/>
 		<property name="hasApplication" value ="true"/>
-		<property name="textChallenge"><null/></property>
-		<property name="linkInfo"><null/></property>
-		<property name="hasChallenge" value ="false"/>
+		<property name="textRolenta"><null/></property>
+		<property name="symbol"><null/></property>
+		<property name="hasRolenta" value ="false"/>
+		<property name="hasSymbol" value ="false"/>
 		<property name="employer" ref="employer2Employer"/>
 
 	</bean>
@@ -587,9 +589,10 @@
 		<property name="moreInfo" value="https://www.example.es/"/>
 		<property name="finalMode" value="false"/>
 		<property name="hasApplication" value ="false"/>
-		<property name="textChallenge"><null/></property>
-		<property name="linkInfo"><null/></property>
-		<property name="hasChallenge" value ="false"/>
+		<property name="textRolenta"><null/></property>
+		<property name="symbol"><null/></property>
+		<property name="hasRolenta" value ="false"/>
+		<property name="hasSymbol" value ="false"/>
 		<property name="employer" ref="employer1Employer"/>
 
 	</bean>
@@ -602,9 +605,10 @@
 		<property name="moreInfo" value="https://www.example.es/"/>
 		<property name="finalMode" value="true"/>
 		<property name="hasApplication" value ="true"/>
-		<property name="textChallenge"><null/></property>
-		<property name="linkInfo"><null/></property>
-		<property name="hasChallenge" value ="false"/>
+		<property name="textRolenta"><null/></property>
+		<property name="symbol"><null/></property>
+		<property name="hasRolenta" value ="false"/>
+		<property name="hasSymbol" value ="false"/>
 		<property name="employer" ref="employer2Employer"/>
 
 	</bean>
@@ -617,9 +621,10 @@
 		<property name="moreInfo" value="https://www.example.es/"/>
 		<property name="finalMode" value="true"/>
 		<property name="hasApplication" value ="true"/>
-		<property name="textChallenge"><null/></property>
-		<property name="linkInfo"><null/></property>
-		<property name="hasChallenge" value ="false"/>
+		<property name="textRolenta"><null/></property>
+		<property name="symbol"><null/></property>
+		<property name="hasRolenta" value ="false"/>
+		<property name="hasSymbol" value ="false"/>
 		<property name="employer" ref="employer1Employer"/>
 
 	</bean>
@@ -632,54 +637,58 @@
 		<property name="moreInfo" value="https://www.example.es/"/>
 		<property name="finalMode" value="true"/>
 		<property name="hasApplication" value ="true"/>
-		<property name="textChallenge" value ="This is a text of a challenge"/>
-		<property name="linkInfo" value="https://projetsii.informatica.us.es"/>
-		<property name="hasChallenge" value ="true"/>
+		<property name="textRolenta" value ="This is a text of a challenge"/>
+		<property name="symbol" value="https://projetsii.informatica.us.es"/>
+		<property name="hasRolenta" value ="true"/>
+		<property name="hasSymbol" value ="true"/>
 		<property name="employer" ref="employer1Employer"/>
 
 	</bean>
 	
 	<bean id="job7" class="acme.entities.jobs.Job">
 		<property name="reference" value="EMPA-JOBE"/>
-		<property name="title" value="Job without Challenge"/>
+		<property name="title" value="Job without rolenta"/>
 		<property name="deadline" value="2023/12/11 23:59"/>
 		<property name="salary" value="€ 100.00"/>
 		<property name="moreInfo" value="https://www.example.es/"/>
 		<property name="finalMode" value="true"/>
 		<property name="hasApplication" value ="true"/>
-		<property name="textChallenge"><null/></property>
-		<property name="linkInfo"><null/></property>
-		<property name="hasChallenge" value ="false"/>
+		<property name="textRolenta"><null/></property>
+		<property name="symbol"><null/></property>
+		<property name="hasRolenta" value ="false"/>
+		<property name="hasSymbol" value ="false"/>
 		<property name="employer" ref="employer1Employer"/>
 
 	</bean>
 	
 	<bean id="job8" class="acme.entities.jobs.Job">
 		<property name="reference" value="EMPB-JOBC"/>
-		<property name="title" value="Job with challenge"/>
+		<property name="title" value="Job with rolenta"/>
 		<property name="deadline" value="2023/12/11 23:59"/>
 		<property name="salary" value="€ 100.00"/>
 		<property name="moreInfo" value="https://www.example.es/"/>
 		<property name="finalMode" value="true"/>
 		<property name="hasApplication" value ="true"/>
-		<property name="textChallenge" value ="This is a text of a challenge"/>
-		<property name="linkInfo"><null/></property>
-		<property name="hasChallenge" value ="true"/>
+		<property name="textRolenta" value ="This is a text of a challenge"/>
+		<property name="symbol"><null/></property>
+		<property name="hasRolenta" value ="true"/>
+		<property name="hasSymbol" value ="false"/>
 		<property name="employer" ref="employer2Employer"/>
 
 	</bean>
 	
 	<bean id="job9" class="acme.entities.jobs.Job">
 		<property name="reference" value="EMPA-JOBF"/>
-		<property name="title" value="Job with challenge and link"/>
+		<property name="title" value="Job with rolenta and symbol"/>
 		<property name="deadline" value="2023/12/11 23:59"/>
 		<property name="salary" value="€ 100.00"/>
 		<property name="moreInfo" value="https://www.example.es/"/>
 		<property name="finalMode" value="true"/>
 		<property name="hasApplication" value ="true"/>
-		<property name="textChallenge" value ="This is a text of a challenge"/>
-		<property name="linkInfo" value="https://projetsii.informatica.us.es"/>
-		<property name="hasChallenge" value ="true"/>
+		<property name="textRolenta" value ="This is a text of a challenge"/>
+		<property name="symbol" value="https://projetsii.informatica.us.es"/>
+		<property name="hasRolenta" value ="true"/>
+		<property name="hasSymbol" value ="true"/>
 		<property name="employer" ref="employer1Employer"/>
 
 	</bean>
@@ -692,9 +701,10 @@
 		<property name="moreInfo" value="https://www.example.es/"/>
 		<property name="finalMode" value="false"/>
 		<property name="hasApplication" value ="false"/>
-		<property name="textChallenge"><null/></property>
-		<property name="linkInfo"><null/></property>
-		<property name="hasChallenge" value ="false"/>
+		<property name="textRolenta"><null/></property>
+		<property name="symbol"><null/></property>
+		<property name="hasRolenta" value ="false"/>
+		<property name="hasSymbol" value ="false"/>
 		<property name="employer" ref="employer1Employer"/>
 
 	</bean>
@@ -857,9 +867,9 @@
 		<property name="skills" value="very good in Python"/>
 		<property name="qualifications" value="2 years working in Spotify"/>
 		<property name="answer"><null/></property>
-		<property name="optionalApplication"><null/></property>
+		<property name="symbol"><null/></property>
 		<property name="password"><null/></property>
-		<property name="hasXXXX" value="false"/>
+		<property name="hasAnswer" value="false"/>
 		<property name="hasPassword" value="false"/>
 		<property name="hasBeenProtected" value="false"/>
 		<property name="worker" ref="worker1Worker"/>
@@ -875,9 +885,9 @@
 		<property name="skills" value="good marks in the career"/>
 		<property name="qualifications" value="nothing"/>
 		<property name="answer"><null/></property>
-		<property name="optionalApplication"><null/></property>
+		<property name="symbol"><null/></property>
 		<property name="password"><null/></property>
-		<property name="hasXXXX" value="false"/>
+		<property name="hasAnswer" value="false"/>
 		<property name="hasPassword" value="false"/>
 		<property name="hasBeenProtected" value="false"/>
 		<property name="worker" ref="worker1Worker"/>
@@ -892,9 +902,9 @@
 		<property name="skills" value="very good in neural networks"/>
 		<property name="qualifications" value="master in intelligent systems"/>
 		<property name="answer"><null/></property>
-		<property name="optionalApplication"><null/></property>
+		<property name="symbol"><null/></property>
 		<property name="password"><null/></property>
-		<property name="hasXXXX" value="false"/>
+		<property name="hasAnswer" value="false"/>
 		<property name="hasPassword" value="false"/>
 		<property name="hasBeenProtected" value="false"/>
 		<property name="worker" ref="worker2Worker"/>
@@ -910,9 +920,9 @@
 		<property name="skills" value="very good in neural networks"/>
 		<property name="qualifications" value="master in intelligent systems"/>
 		<property name="answer"><null/></property>
-		<property name="optionalApplication"><null/></property>
+		<property name="symbol"><null/></property>
 		<property name="password"><null/></property>
-		<property name="hasXXXX" value="false"/>
+		<property name="hasAnswer" value="false"/>
 		<property name="hasPassword" value="false"/>
 		<property name="hasBeenProtected" value="false"/>
 		<property name="worker" ref="worker2Worker"/>
@@ -921,7 +931,7 @@
 	</bean>
 	
 	<bean id="application5" class="acme.entities.application.Application">
-		<property name="reference" value="EMPA-JOBD:AAAF"/>
+		<property name="reference" value="EMPA-JOBD:AAWQ"/>
 		<property name="moment" value="2019/12/15 13:59"/>
 		<property name="status" value="pending"/>
 		<property name="justification"><null/></property>
@@ -929,9 +939,9 @@
 		<property name="skills" value="very good in neural networks"/>
 		<property name="qualifications" value="master in intelligent systems"/>
 		<property name="answer" value="This is an answer"/>
-		<property name="optionalApplication"><null/></property>
+		<property name="symbol"><null/></property>
 		<property name="password"><null/></property>
-		<property name="hasXXXX" value="true"/>
+		<property name="hasAnswer" value="true"/>
 		<property name="hasPassword" value="false"/>
 		<property name="hasBeenProtected" value="false"/>
 		<property name="worker" ref="worker1Worker"/>
@@ -948,9 +958,9 @@
 		<property name="skills" value="very good in neural networks"/>
 		<property name="qualifications" value="master in intelligent systems"/>
 		<property name="answer" value="This is an answer"/>
-		<property name="optionalApplication" value="This is an optional Application"/>
+		<property name="symbol" value="https://www.us.es"/>
 		<property name="password"><null/></property>
-		<property name="hasXXXX" value="true"/>
+		<property name="hasAnswer" value="true"/>
 		<property name="hasPassword" value="false"/>
 		<property name="hasBeenProtected" value="false"/>
 		<property name="worker" ref="worker1Worker"/>
@@ -966,10 +976,10 @@
 		<property name="statement" value="A statement"/>
 		<property name="skills" value="very good in neural networks"/>
 		<property name="qualifications" value="master in intelligent systems"/>
-		<property name="answer" value="This is an answer"/>
-		<property name="optionalApplication" value="The password of this application is 3Bf?f¡4a"/>
-		<property name="password" value="3Bf?f¡4a"/>
-		<property name="hasXXXX" value="true"/>
+		<property name="answer" value="The password is A?876543210"/>
+		<property name="symbol" value="https://www.us.es"/>
+		<property name="password" value="A?876543210"/>
+		<property name="hasAnswer" value="true"/>
 		<property name="hasPassword" value="true"/>
 		<property name="hasBeenProtected" value="true"/>
 		<property name="worker" ref="worker1Worker"/>

@@ -12,30 +12,32 @@
 	<acme:form-textarea code="employer.application.form.label.statement" path="statement" readonly="true"/>
 	
 	
-	<acme:form-hidden path="hasXXXX"/>
+	<acme:form-hidden path="hasAnswer"/>
 	<acme:form-hidden path="hasPassword"/>
 	
-	<jstl:if test="${hasXXXX == true && hasPassword == false && command == 'show'}">
+	<jstl:if test="${hasAnswer == true && hasPassword == false && command == 'show'}">
 	<h4><acme:message code="employer.application.form.message.answer"/></h4>
 	<acme:form-textbox code="employer.application.form.label.answer" path="answer" readonly="true"/>
-	<acme:form-textbox code="employer.application.form.label.optionalApplication" path="optionalApplication" readonly="true"/>
+	<acme:form-textbox code="employer.application.form.label.optionalApplication" path="symbol" readonly="true"/>
 	</jstl:if>
 	
 	<jstl:if test="${status == 'pending'}">
-	<jstl:if test="${hasXXXX == true && hasPassword == true && command == 'show'}">
+	<jstl:if test="${hasAnswer == true && hasPassword == true && command == 'show'}">
+	<acme:form-textbox code="employer.application.form.label.answer" path="answer" readonly="true"/>
 	<h4><acme:message code="employer.application.form.message.password"/></h4>
 	<acme:form-textbox code="employer.application.form.label.answerEmployer" path="passwordEmployer"/>
 	</jstl:if>
 	</jstl:if>
 	
-	<jstl:if test="${hasXXXX == true && hasPassword == false && command == 'update'}">
+	<jstl:if test="${hasAnswer == true && hasPassword == false && command == 'update'}">
 	<h4><acme:message code="employer.application.form.message.answer"/></h4>
 	<acme:form-textbox code="employer.application.form.label.answer" path="answer" readonly="true"/>
-	<acme:form-textbox code="employer.application.form.label.optionalApplication" path="optionalApplication" readonly="true"/>
+	<acme:form-textbox code="employer.application.form.label.optionalApplication" path="symbol" readonly="true"/>
 	</jstl:if>
 
 	
-	<jstl:if test="${hasXXXX == true && hasPassword == true && command == 'update'}">
+	<jstl:if test="${hasAnswer == true && hasPassword == true && command == 'update'}">
+	<acme:form-textbox code="employer.application.form.label.answer" path="answer" readonly="true"/>
 	<h4><acme:message code="employer.application.form.message.password"/></h4>
 	<acme:form-textbox code="employer.application.form.label.answerEmployer" path="passwordEmployer"/>
 	</jstl:if>

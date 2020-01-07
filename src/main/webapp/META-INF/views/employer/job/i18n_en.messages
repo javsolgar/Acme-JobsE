@@ -9,10 +9,10 @@ employer.job.form.label.title = Title:
 employer.job.form.label.deadline = Dead-Line:
 employer.job.form.label.salary = Salary:
 employer.job.form.label.moreInfo = More info:
-employer.job.form.message.challenge = If you want you can add a XXXX to your job:
-employer.job.form.message.yourchallenge = Information of XXXX of the job:
-employer.job.form.label.textChallenge = description of XXXX:
-employer.job.form.label.moreInfoChallenge = more info of XXXX:
+employer.job.form.message.challenge = If you want you can add a rolenta to your job:
+employer.job.form.message.yourchallenge = Information of rolenta of the job:
+employer.job.form.label.textChallenge = Description of rolenta:
+employer.job.form.label.moreInfoChallenge = Symbol:
 employer.job.form.label.finalMode = Publish:
 employer.job.form.label.finalMode.false = No
 employer.job.form.label.finalMode.true = Yes
@@ -36,7 +36,7 @@ employer.job.error.must-be-not-duplicated-reference = The job can not have a dup
 employer.job.error.must-have-descriptor = The job must have a description
 employer.job.error.must-not-have-spam-descriptor = The description of the job must not be spam
 employer.job.error.must-100 = The percentage of the duties must sum 100%
-employer.job.error.must-have-textChallenge = The XXXX must not have more info link if it not have the description of the XXXX
-employer.job.error.must-not-have-spam-textChallenge = The description of the XXXX must not contains spam
+employer.job.error.must-have-textChallenge = The rolenta must not have a symbol if it not have the description of the rolenta
+employer.job.error.must-not-have-spam-textChallenge = The description of the rolenta must not contains spam
 
 
