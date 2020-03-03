@@ -61,7 +61,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "status", "skills", "statement", "qualifications", "answer", "optionalApplication", "password", "hasChallenge");
+		request.unbind(entity, model, "reference", "status", "skills", "statement", "qualifications", "answer", "symbol", "password", "hasRolenta");
 
 	}
 
@@ -85,7 +85,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		result.setJob(job);
 		result.setStatus("pending");
 		result.setMoment(moment);
-		result.setHasXXXX(false);
+		result.setHasAnswer(false);
 		result.setHasPassword(false);
 		return result;
 	}
@@ -97,7 +97,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert errors != null;
 
 		boolean hasReference, isDuplicated, hasStatus, hasSkills, hasStatement, hasQualifications, alreadyApplicated, hasSpamSkills, hasSpamStatement, hasSpamQualifications;
-		boolean hasAnswer, hasSpamAnswer, hasOptionalApplication, hasSpamOptionalApplication, hasPassword;
+		boolean hasAnswer, hasSpamAnswer, hasSymbol, hasSpamSymbol, hasPassword;
 		Integer id;
 		Principal principal;
 		String spamWords;
@@ -186,19 +186,19 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 
 			// Validation optionalApplication ------------------------------------------------------------------------------------------------
 
-			if (!errors.hasErrors("optionalApplication")) {
+			if (!errors.hasErrors("symbol")) {
 
-				hasOptionalApplication = entity.getOptionalApplication() != null && !entity.getOptionalApplication().isEmpty();
+				hasSymbol = entity.getSymbol() != null && !entity.getSymbol().isEmpty();
 
-				if (hasOptionalApplication && !errors.hasErrors("answer")) {
+				if (hasSymbol && !errors.hasErrors("answer")) {
 
 					hasAnswer = entity.getAnswer() != null && !entity.getAnswer().isEmpty();
-					errors.state(request, hasAnswer, "optionalApplication", "worker.application.error.must-have-answer");
+					errors.state(request, hasAnswer, "symbol", "worker.application.error.must-have-answer");
 
 					if (hasAnswer) {
 
-						hasSpamOptionalApplication = Spamfilter.spamThreshold(entity.getOptionalApplication(), spamWords, spamThreshold);
-						errors.state(request, !hasSpamOptionalApplication, "optionalApplication", "worker.application.error.must-not-have-spam-optionalApplication");
+						hasSpamSymbol = Spamfilter.spamThreshold(entity.getSymbol(), spamWords, spamThreshold);
+						errors.state(request, !hasSpamSymbol, "symbol", "worker.application.error.must-not-have-spam-optionalApplication");
 					}
 
 				}
@@ -212,8 +212,8 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 				hasPassword = entity.getPassword() != null && !entity.getPassword().isEmpty();
 
 				if (hasPassword) {
-					hasAnswer = entity.getAnswer() != null && !entity.getAnswer().isEmpty();
-					errors.state(request, hasAnswer, "password", "worker.application.error.must-have-optional");
+					hasSymbol = entity.getSymbol() != null && !entity.getAnswer().isEmpty();
+					errors.state(request, hasSymbol, "password", "worker.application.error.must-have-optional");
 				}
 
 			}
@@ -225,29 +225,29 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert request != null;
 		assert entity != null;
 
-		boolean hasPassword, hasXXXX;
+		boolean hasPassword, hasAnswer;
 		int jobId;
 		Job job;
 
 		jobId = request.getModel().getInteger("jobId");
 		job = this.repository.findJobById(jobId);
 
-		entity.setHasXXXX(false);
+		entity.setHasAnswer(false);
 		entity.setHasPassword(false);
 		//entity.setIncludeXXXXinXXXX(false);
 		entity.setHasBeenProtected(false);
 
 		// Si incluye contresale las aplicaciones -----------------------------------------------------------------------------
 		hasPassword = entity.getPassword() != null && !entity.getPassword().isEmpty();
-		hasXXXX = entity.getAnswer() != null && !entity.getAnswer().isEmpty();
+		hasAnswer = entity.getAnswer() != null && !entity.getAnswer().isEmpty();
 		if (hasPassword) {
 			entity.setHasPassword(true);
 			entity.setHasBeenProtected(true);
 		}
 
 		// Si incluye XXXX las aplicaciones -----------------------------------------------------------------------------
-		if (hasXXXX) {
-			entity.setHasXXXX(true);
+		if (hasAnswer) {
+			entity.setHasAnswer(true);
 			/*
 			 * hasoptionalApplication = entity.getOptionalApplication() != null && !entity.getOptionalApplication().isEmpty();
 			 * if (hasoptionalApplication) {

@@ -13,12 +13,12 @@
 	<acme:form-textarea code="worker.application.form.label.statement" path="statement"/>
 	<acme:form-textarea code="worker.application.form.label.qualifications" path="qualifications"/>
 	
-	<jstl:if test="${hasChallenge == true || challenge == true }">
+	<jstl:if test="${hasRolenta == true || rolenta == true }">
 	<jstl:if test="${command == 'create'}">
 	<h4><acme:message code="worker.application.form.message.answer"/></h4>
 	</jstl:if>
 	<acme:form-textbox code="worker.application.form.label.answer" path="answer"/>
-	<acme:form-textbox code="worker.application.form.label.optionalApplication" path="optionalApplication"/>
+	<acme:form-textbox code="worker.application.form.label.optionalApplication" path="symbol"/>
 	<jstl:if test="${command == 'create'}">
 	<h4><acme:message code="worker.application.form.message.password"/></h4>
 	<acme:form-textbox code="worker.application.form.label.password" path="password"/>
@@ -27,10 +27,10 @@
 	
 	
 	
-	<jstl:if test="${hasXXXX == true}">
+	<jstl:if test="${hasAnswer == true}">
 	<h4><acme:message code="worker.application.form.message.answer.created"/></h4>
 	<acme:form-textbox code="worker.application.form.label.answer" path="answer"/>
-	<acme:form-textbox code="worker.application.form.label.optionalApplication" path="optionalApplication"/>
+	<acme:form-textbox code="worker.application.form.label.optionalApplication" path="symbol"/>
 	<jstl:if test="${hasBeenProtected == true}">
 	<acme:form-textbox code="worker.application.form.label.password.created" path="password"/>
 	</jstl:if>
@@ -50,6 +50,6 @@
 	
 	
 	
-	<acme:form-submit test ="${command == 'create'}" code="worker.application.form.label.button.create" action="/worker/application/create?jobId=${param.jobId}&challenge=${param.challenge}"/>
+	<acme:form-submit test ="${command == 'create'}" code="worker.application.form.label.button.create" action="/worker/application/create?jobId=${param.jobId}&rolenta=${param.rolenta}"/>
 	<acme:form-return code="worker.application.form.label.button.return"/>
 </acme:form>

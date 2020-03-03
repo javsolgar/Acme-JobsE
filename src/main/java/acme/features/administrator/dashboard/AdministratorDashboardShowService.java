@@ -53,7 +53,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		request.unbind(entity, model, "totalAnnouncement", "totalInvestorsRecord", "totalCompanyRecords", "minRewardRequest", "maxRewardRequest", "minRewardOffers", "maxRewardOffers", "companysBySector", "sectorsOfCompanys", "inverstorsBySector",
 			"sectorsOfInverstors", "mediaRequest", "mediaOffer", "stdevRequest", "stdevOffer", "jobsByFinalMode", "statusOfApplication", "applicationByStatus", "avgApplicationEmployer", "avgJobEmployer", "avgApplicationWorker", "diasPending",
-			"applicationPendingPerDay", "applicationAcceptedPerDay", "applicationRejectedPerDay", "ratioJobsThatHaveChallengeProperty", "ratioApplicationPasswordProtected");
+			"applicationPendingPerDay", "applicationAcceptedPerDay", "applicationRejectedPerDay", "ratioJobsThatHaveRolentaProperty", "ratioApplicationPasswordProtected", "ratioOfRolentasWithSymbol");
 
 	}
 
@@ -85,8 +85,9 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setApplicationPendingPerDay(this.getApplicationPendingPerDay(this.getPendingPerDay()));
 		result.setApplicationAcceptedPerDay(this.getApplicationAcceptedPerDay(this.getAcceptedPerDay()));
 		result.setApplicationRejectedPerDay(this.getApplicationRejectedPerDay(this.getRejectedPerDay()));
-		result.setRatioJobsThatHaveChallengeProperty(this.getRatioJobsThatHaveChallengeProperty());
+		result.setRatioJobsThatHaveRolentaProperty(this.getRatioJobsThatHaveRolentaProperty());
 		result.setRatioApplicationPasswordProtected(this.getRatioApplicationPasswordProtected());
+		result.setRatioOfRolentasWithSymbol(this.getRatioRolentasWithSymbol());
 
 		return result;
 	}
@@ -373,8 +374,16 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 	}
 
-	public Double getRatioJobsThatHaveChallengeProperty() {
-		Double ratio = this.repository.ratioJobsWithChallenge();
+	public Double getRatioJobsThatHaveRolentaProperty() {
+		Double ratio = this.repository.ratioJobsWithRolenta();
+		if (ratio == null) {
+			return 0.;
+		}
+		return ratio;
+	}
+
+	public Double getRatioRolentasWithSymbol() {
+		Double ratio = this.repository.ratioRolentasWithSymbol();
 		if (ratio == null) {
 			return 0.;
 		}

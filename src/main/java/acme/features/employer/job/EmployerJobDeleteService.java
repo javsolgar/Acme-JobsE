@@ -61,7 +61,7 @@ public class EmployerJobDeleteService implements AbstractDeleteService<Employer,
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "reference", "title", "deadline", "textChallenge", "linkInfo");
+		request.unbind(entity, model, "reference", "title", "deadline", "textRolenta", "symbol", "hasRolenta", "hasSymbol");
 
 	}
 

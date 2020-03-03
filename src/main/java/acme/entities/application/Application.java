@@ -14,6 +14,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.URL;
+
 import acme.entities.jobs.Job;
 import acme.entities.roles.Worker;
 import acme.framework.entities.DomainEntity;
@@ -60,12 +62,13 @@ public class Application extends DomainEntity {
 	@Column(length = 1024)
 	private String				answer;
 
-	private String				optionalApplication;
+	@URL
+	private String				symbol;
 
-	@Pattern(regexp = "^((?=(?:.*\\p{L}){4})(?=(?:.*\\p{N}){2,})(?=(?:.*\\p{P}){2,}).{8,})?$", message = "Error")
+	@Pattern(regexp = "^((?=(?:.*\\p{L}){1,})(?=(?:.*\\p{N}){1,})(?=(?:.*\\p{P}){1,}).{10,})?$", message = "Error")
 	private String				password;
 
-	private boolean				hasXXXX;
+	private boolean				hasAnswer;
 
 	private boolean				hasPassword;
 
@@ -77,8 +80,8 @@ public class Application extends DomainEntity {
 	//Derivated atributes --------------------------------------------------------------------
 
 	@Transient
-	public boolean getHasChallenge() {
-		return this.job.isHasChallenge();
+	public boolean getHasRolenta() {
+		return this.job.isHasRolenta();
 	}
 
 
